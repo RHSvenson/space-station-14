@@ -48,7 +48,11 @@ public static class ServerPackaging
         "Npgsql",
         "Microsoft",
         "NAudio",
-        "OggVorbisEncoder"
+        "OggVorbisEncoder",
+        "Microsoft.Orleans.Client", // Starlight
+        "Microsoft.Orleans.Clustering.Redis", // Starlight
+        "Microsoft.Orleans.Sdk", // Starlight
+        "SS14.Starlight.NullLink", // Starlight
     };
 
     private static readonly List<string> ServerNotExtraAssemblies = new()
