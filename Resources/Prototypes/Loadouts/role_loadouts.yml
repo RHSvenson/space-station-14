@@ -7,6 +7,7 @@
   - CaptainJumpsuit
   - CaptainBackpack
   - CaptainOuterClothing
+  - CaptainShoes # 🌟Starlight🌟
   - CaptainEyewear
   - SurvivalExtended
   - Trinkets
@@ -21,16 +22,17 @@
   - HoPJumpsuit
   - HoPBackpack
   - HoPOuterClothing
+  - HoPShoes # 🌟Starlight🌟
   - Glasses
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
 
 # Silicons
-#- type: roleLoadout
-#  id: JobBorg
-#  nameDataset: roleloadout doesn't support both so need to update that first.
-#  canCustomizeName: true
+- type: roleLoadout
+  id: JobBorg
+  nameDataset: NamesBorg
+  canCustomizeName: true
 
 - type: roleLoadout
   id: JobStationAi
@@ -62,6 +64,7 @@
   - BartenderJumpsuit
   - CommonBackpack
   - BartenderOuterClothing
+  - CivilianShoes # 🌟Starlight🌟
   - Glasses
   - Survival
   - Trinkets
@@ -73,6 +76,7 @@
   - GroupTankHarness
   - BartenderJumpsuit
   - CommonBackpack
+  - CivilianShoes # 🌟Starlight🌟
   - Glasses
   - Survival
   - Trinkets
@@ -87,6 +91,7 @@
   - ChefJumpsuit
   - CommonBackpack
   - ChefOuterClothing
+  - CivilianShoes # 🌟Starlight🌟
   - Glasses
   - Survival
   - Trinkets
@@ -98,6 +103,7 @@
   - GroupTankHarness
   - LibrarianJumpsuit
   - CommonBackpack
+  - CivilianShoes # 🌟Starlight🌟
   - Glasses
   - Survival
   - Trinkets
@@ -125,6 +131,7 @@
   - ChaplainJumpsuit
   - CommonBackpack
   - ChaplainOuterClothing
+  - CivilianShoes # 🌟Starlight🌟
   - Glasses
   - Survival
   - Trinkets
@@ -160,6 +167,7 @@
 
 - type: roleLoadout
   id: JobClown
+  canCustomizeName: true
   groups:
   - GroupTankHarness
   - ClownHead
@@ -173,6 +181,7 @@
 
 - type: roleLoadout
   id: JobMime
+  canCustomizeName: true
   groups:
   - GroupTankHarness
   - MimeHead
@@ -192,6 +201,7 @@
   - MusicianJumpsuit
   - CommonBackpack
   - MusicianOuterClothing
+  - CivilianShoes # 🌟Starlight🌟
   - Glasses
   - Survival
   - Trinkets
@@ -396,7 +406,7 @@
   - SecurityBackpack
   - SecurityEyewear
   - DetectiveOuterClothing
-  - SecurityShoes
+  - DetectiveShoes # 🌟Starlight🌟
   - SurvivalSecurity
   - Trinkets
   - SecurityStar
@@ -426,7 +436,7 @@
   - ChiefMedicalOfficerOuterClothing
   - ChiefMedicalOfficerNeck
   - ChiefMedicalOfficerShoes
-  - Glasses
+  - MedicalEyewear
   - SurvivalMedical
   - Trinkets
   - GroupSpeciesBreathToolMedical
@@ -443,7 +453,7 @@
   - MedicalDoctorOuterClothing
   - MedicalShoes
   - MedicalDoctorPDA
-  - Glasses
+  - MedicalEyewear
   - SurvivalMedical
   - Trinkets
   - GroupSpeciesBreathToolMedical
@@ -454,7 +464,7 @@
   - GroupTankHarness
   - MedicalInternJumpsuit
   - MedicalBackpack
-  - Glasses
+  - MedicalEyewear
   - SurvivalMedical
   - Trinkets
   - GroupSpeciesBreathToolMedical
@@ -484,7 +494,7 @@
   - MedicalBackpack
   - ParamedicOuterClothing
   - ParamedicShoes
-  - Glasses
+  - MedicalEyewear
   - SurvivalMedical
   - Trinkets
   - GroupSpeciesBreathToolMedical
@@ -495,6 +505,7 @@
   groups:
   - GroupTankHarness
   - CommonBackpack
+  - CivilianShoes # 🌟Starlight🌟
   - Glasses
   - Survival
   - Trinkets
@@ -506,6 +517,7 @@
   - GroupTankHarness
   - ReporterJumpsuit
   - CommonBackpack
+  - CivilianShoes # 🌟Starlight🌟
   - Glasses
   - Survival
   - Trinkets
@@ -517,6 +529,7 @@
   - GroupTankHarness
   - PsychologistJumpsuit
   - MedicalBackpack
+  - CivilianShoes # 🌟Starlight🌟
   - Glasses
   - Survival
   - Trinkets

@@ -49,10 +49,14 @@ public static class ServerPackaging
         "Microsoft",
         "NAudio",
         "OggVorbisEncoder",
+<<<<<<< nullLink_hub
         "Microsoft.Orleans.Client", // Starlight
         "Microsoft.Orleans.Clustering.Redis", // Starlight
         "Microsoft.Orleans.Sdk", // Starlight
         "SS14.Starlight.NullLink", // Starlight
+=======
+        "Discord",
+>>>>>>> Starlight
     };
 
     private static readonly List<string> ServerNotExtraAssemblies = new()
