@@ -31,6 +31,13 @@
     species:
     - Vox
 
+- type: loadoutEffectGroup #🌟Starlight🌟
+  id: NonBreather
+  effects:
+  - !type:SpeciesLoadoutEffect
+    species:
+    - Shadekin
+
 # Basic
 - type: loadout
   id: EmergencyOxygen
@@ -190,6 +197,16 @@
   storage:
     back:
     - BoxSurvivalSyndicateNitrogen
+
+# Shadekin 🌟Starlight🌟
+- type: loadout
+  id: EmergencyBoxShadekin
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: NonBreather
+  storage:
+    back:
+    - BoxSurvivalShadekin
 
 # Pre-equipped species gear
 
