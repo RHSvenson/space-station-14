@@ -287,7 +287,7 @@
   - type: Label
     currentLabel: reagent-name-nitrogen
 
-- type: entity
+- type: entity # 🌟Starlight🌟
   parent: BoxCardboard
   id: BoxSurvivalShadekin
   name: survival box
@@ -303,3 +303,5 @@
     - id: ClothingEyesGlassesSunglasses
     - id: ClothingEyesBlindfold
   - type: Sprite
+    layers:
+    -state: Shadekin
