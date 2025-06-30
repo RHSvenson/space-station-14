@@ -292,7 +292,7 @@
   id: BoxSurvivalShadekin
   name: survival box
   description: It's a survival box containing supplies useful for Shadekin
-  suffix: Standard
+  suffix: Shadekin
   components:
   - type: StorageFill
     contents:
