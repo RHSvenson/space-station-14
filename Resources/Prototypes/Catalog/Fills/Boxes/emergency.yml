@@ -297,11 +297,10 @@
   - type: StorageFill
     contents:
     - id: EmergencyMedipen
-    - id: Flare
     - id: FoodSnackNutribrick
     - id: DrinkWaterBottleFull
     - id: ClothingEyesGlassesSunglasses
     - id: ClothingEyesBlindfold
   - type: Sprite
     layers:
-    -state: Shadekin
+    -state: shadekin
