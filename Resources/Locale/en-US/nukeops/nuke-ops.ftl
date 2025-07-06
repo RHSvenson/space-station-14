@@ -1,2 +1,2 @@
 nuke-ops-no-more-threat-announcement-shuttle-call = Based on our long-range scans, the nuclear threat to the station has now been eliminated. An emergency shuttle has been called for the survivors, which will arrive in around {$time} {$units}. If you believe this to be unnecessary, you may recall it. Glory to NanoTrasen.
-nuke-ops-no-more-threat-announcement = Based on our scans from our long-range sensors, the nuclear threat is now eliminated. Shuttle is already called.
+nuke-ops-no-more-threat-announcement = Based on our long-range scans, the nuclear threat to the station has now been eliminated. A shuttle is already on the way for the survivors. Glory to NanoTrasen.
