@@ -9,6 +9,7 @@
       - torso
       organs:
         brain: OrganHumanBrain
+        skull: BoneHumanSkull
         eyes: OrganHumanEyes
         tongue: OrganHumanTongue
         eye_implant: null
@@ -25,15 +26,21 @@
         stomach: OrganHumanStomach
         liver: OrganHumanLiver
         kidneys: OrganHumanKidneys
+        ribcage: BoneHumanRibcage
+        hip: BoneHumanHip
         cavity: null
     right arm:
       part: RightArmHuman
       connections:
       - right hand
+      organs:
+        bones: BoneHumanRightArm
     left arm:
       part: LeftArmHuman
       connections:
       - left hand
+      organs:
+        bones: BoneHumanLeftArm
     right hand:
       part: RightHandHuman
     left hand:
@@ -42,10 +49,14 @@
       part: RightLegHuman
       connections:
       - right foot
+      organs: 
+        bones: BoneHumanRightLeg
     left leg:
       part: LeftLegHuman
       connections:
       - left foot
+      organs:
+        bones: BoneHumanLeftLeg
     right foot:
       part: RightFootHuman
     left foot:

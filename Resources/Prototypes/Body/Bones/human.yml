@@ -1,0 +1,31 @@
+- type: entity
+  id: BaseHumanBone
+  parent: BaseBone
+
+- type: entity
+  id: BoneHumanSkull
+  parent: [ BaseBoneSkull, BaseHumanBone ]
+
+- type: entity
+  id: BoneHumanRibcage
+  parent: [ BaseBoneRibcage, BaseHumanBone ]
+
+- type: entity
+  id: BoneHumanHip
+  parent: [ BaseBoneHip, BaseHumanBone ]
+
+- type: entity
+  id: BoneHumanLeftArm
+  parent: [ BaseBoneLeftArm, BaseHumanBone ]
+
+- type: entity
+  id: BoneHumanRightArm
+  parent: [ BaseBoneRightArm, BaseHumanBone ]
+
+- type: entity
+  id: BoneHumanLeftLeg
+  parent: [ BaseBoneLeftLeg, BaseHumanBone ]
+
+- type: entity
+  id: BoneHumanRightLeg
+  parent: [ BaseBoneRightLeg, BaseHumanBone ]

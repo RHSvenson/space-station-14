@@ -1,0 +1,137 @@
+- type: entity
+  id: BaseBone
+  parent: BaseItem
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: Mobs/Species/Skeleton/parts.rsi
+  - type: Organ
+  - type: Food
+  - type: Openable
+    openableByHand: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 6
+      behaviors:
+      - !type:OpenBehavior
+  - type: Gibbable
+  - type: Extractable
+    grindableSolutionName: organ
+  - type: SolutionContainerManager
+    solutions:
+      organ:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 15
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 5
+        - ReagentId: Fat
+          Quantity: 5
+  - type: FlavorProfile
+    flavors:
+      - people
+  - type: Tag
+    tags:
+      - Meat
+
+- type: entity
+  id: BaseBoneSkull
+  parent: BaseBone
+  name: "a skull"
+  abstract: true
+  components:
+    - type: Sprite
+      sprite: Mobs/Species/Skeleton/parts.rsi
+      state: "skull_icon"
+    - type: Icon
+      sprite: Mobs/Species/Skeleton/parts.rsi
+      state: "skull_icon"
+
+- type: entity
+  id: BaseBoneRibcage
+  parent: BaseBone
+  name: "a ribcage"
+  abstract: true
+  components:
+    - type: Sprite
+      sprite: Mobs/Species/Skeleton/parts.rsi
+      state: "torso_m"
+    - type: Icon
+      sprite: Mobs/Species/Skeleton/parts.rsi
+      state: "torso_m"
+
+- type: entity
+  id: BaseBoneHip
+  parent: BaseBone
+  name: "a hipbone"
+  abstract: true
+  components:
+    - type: Sprite
+      sprite: Mobs/Species/Skeleton/parts.rsi
+      state: "torso_m"
+    - type: Icon
+      sprite: Mobs/Species/Skeleton/parts.rsi
+      state: "torso_m"
+
+- type: entity
+  id: BaseBoneLeftArm
+  parent: BaseBone
+  name: "bones from a left arm"
+  abstract: true
+  components:
+    - type: Sprite
+      sprite: Mobs/Species/Skeleton/parts.rsi
+      state: "l_arm"
+    - type: Icon
+      sprite: Mobs/Species/Skeleton/parts.rsi
+      state: "l_arm"
+
+- type: entity
+  id: BaseBoneRightArm
+  parent: BaseBone
+  name: "bones from a right arm"
+  abstract: true
+  components:
+    - type: Sprite
+      sprite: Mobs/Species/Skeleton/parts.rsi
+      state: "r_arm"
+    - type: Icon
+      sprite: Mobs/Species/Skeleton/parts.rsi
+      state: "r_arm"
+
+- type: entity
+  id: BaseBoneLeftLeg
+  parent: BaseBone
+  name: "bones from a left leg"
+  abstract: true
+  components:
+    - type: Sprite
+      sprite: Mobs/Species/Skeleton/parts.rsi
+      state: "l_leg"
+    - type: Icon
+      sprite: Mobs/Species/Skeleton/parts.rsi
+      state: "l_leg"
+
+- type: entity
+  id: BaseBoneRightLeg
+  parent: BaseBone
+  name: "bones from a right leg"
+  abstract: true
+  components:
+    - type: Sprite
+      sprite: Mobs/Species/Skeleton/parts.rsi
+      state: "r_leg"
+    - type: Icon
+      sprite: Mobs/Species/Skeleton/parts.rsi
+      state: "r_leg"
