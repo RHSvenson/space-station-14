@@ -9,6 +9,8 @@
   - type: Food
   - type: Openable
     openableByHand: false
+    sound:
+      path: /Audio/_Starlight/Items/Bones/bonebreak.ogg
   - type: Destructible
     thresholds:
     - trigger:
@@ -26,6 +28,9 @@
           Bones:
             min: 1
             max: 2
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/_Starlight/Items/Bones/bonebreak.ogg
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
     - trigger:
@@ -52,6 +57,7 @@
   - type: FlavorProfile
     flavors:
       - people
+      - boney
   - type: Tag
     tags:
       - Meat
