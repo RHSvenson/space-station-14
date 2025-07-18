@@ -8,9 +8,12 @@
   - type: Organ
   - type: Food
   - type: Openable
-    openableByHand: false
-    sound:
+    OpenableByHand: false
+    Sound:
       path: /Audio/_Starlight/Items/Bones/bonebreak.ogg
+    ExamineText: bone-examine-open
+    ClosedPopup: bone-examine-closed
+    Closeable: false
   - type: Destructible
     thresholds:
     - trigger:
