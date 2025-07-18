@@ -53,10 +53,10 @@
   components:
     - type: Sprite
       sprite: Mobs/Species/Skeleton/parts.rsi
-      state: "skull_icon"
+      state: "head_m"
     - type: Icon
       sprite: Mobs/Species/Skeleton/parts.rsi
-      state: "skull_icon"
+      state: "head_m"
 
 - type: entity
   id: BaseBoneRibcage
@@ -66,10 +66,10 @@
   components:
     - type: Sprite
       sprite: Mobs/Species/Skeleton/parts.rsi
-      state: "torso_m"
+      state: "torso_f"
     - type: Icon
       sprite: Mobs/Species/Skeleton/parts.rsi
-      state: "torso_m"
+      state: "torso_f"
 
 - type: entity
   id: BaseBoneHip
