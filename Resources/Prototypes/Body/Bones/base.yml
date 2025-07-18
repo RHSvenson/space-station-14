@@ -8,12 +8,12 @@
   - type: Organ
   - type: Food
   - type: Openable
-    OpenableByHand: false
-    Sound:
+    openableByHand: false
+    sound:
       path: /Audio/_Starlight/Items/Bones/bonebreak.ogg
-    ExamineText: bone-examine-open
-    ClosedPopup: bone-examine-closed
-    Closeable: false
+    examineText: bone-examine-open
+    closedPopup: bone-examine-closed
+    closeable: false
   - type: Destructible
     thresholds:
     - trigger:
@@ -24,7 +24,7 @@
         acts: [ "Destruction" ]
     - trigger:
         !type:DamageTrigger
-        damage: 12
+        damage: 20
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
@@ -41,9 +41,22 @@
         damage: 6
       behaviors:
       - !type:OpenBehavior
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/_Starlight/Items/Bones/bonebreak.ogg
+  - type: DamageOnLand
+    damage:
+      types:
+        Blunt: 3
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Blunt: 3
   - type: Gibbable
   - type: Extractable
     grindableSolutionName: organ
+  - type: Damageable
+    damageContainer: Biological
   - type: SolutionContainerManager
     solutions:
       organ:
