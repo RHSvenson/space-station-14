@@ -9,6 +9,7 @@
       - torso
       organs:
         brain: OrganHumanBrain
+        skull: BoneArachnidSkull
         eyes: OrganArachnidEyes
         tongue: OrganHumanTongue
         eye_implant: null
@@ -20,6 +21,8 @@
       - right leg
       - left leg
       organs:
+        ribcage: BoneArachnidRibcage
+        hip: BoneArachnidHip
         heart: OrganArachnidHeart
         lungs: OrganAnimalLungs
         stomach: OrganArachnidStomach
@@ -30,23 +33,39 @@
       part: RightArmArachnid
       connections:
       - right hand
+      organs:
+        bones: BoneArachnidRightArm
     left arm:
       part: LeftArmArachnid
       connections:
       - left hand
+      organs:
+        bones: BoneArachnidLeftArm
     right hand:
       part: RightHandArachnid
+      organs:
+        bones: BoneArachnidRightHand
     left hand:
       part: LeftHandArachnid
+      organs:
+        bones: BoneArachnidRightHand
     right leg:
       part: RightLegArachnid
       connections:
       - right foot
+      organs:
+        bones: BoneArachnidRightLeg
     left leg:
       part: LeftLegArachnid
       connections:
       - left foot
+      organs:
+        bones: BoneArachnidLeftLeg
     right foot:
       part: RightFootArachnid
+      organs:
+        bones: BoneArachnidRightFoot
     left foot:
       part: LeftFootArachnid
+      organs:
+        bones: BoneArachnidLeftFoot

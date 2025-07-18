@@ -8,6 +8,7 @@
       connections:
       - torso
       organs:
+        skull: BoneShadekinSkull
         brain: OrganShadekinBrain
         eyes: OrganShadekinEyes
         tongue: OrganShadekinTongue
@@ -20,6 +21,8 @@
       - right leg
       - left leg
       organs:
+        ribcage: BoneShadekinRibcage
+        hip: BoneShadekinHip
         core: OrganShadekinCore
         heart: OrganShadekinHeart
         stomach: OrganShadekinStomach
@@ -30,23 +33,39 @@
       part: RightArmShadekin
       connections:
       - right hand
+      organs:
+        bones: BoneShadekinRightArm
     left arm:
       part: LeftArmShadekin
       connections:
       - left hand
+      organs:
+        bones: BoneShadekinLeftArm
     right hand:
       part: RightHandShadekin
+      organs:
+        bones: BoneShadekinRightHand
     left hand:
       part: LeftHandShadekin
+      organs:
+        bones: BoneShadekinLeftHand
     right leg:
       part: RightLegShadekin
       connections:
       - right foot
+      organs:
+        bones: BoneShadekinRightLeg
     left leg:
       part: LeftLegShadekin
       connections:
       - left foot
+      organs:
+        bones: BoneShadekinLeftLeg
     right foot:
       part: RightFootShadekin
+      organs:
+        bones: BoneShadekinRightFoot
     left foot:
       part: LeftFootShadekin
+      organs:
+        bones: BoneShadekinLeftFoot

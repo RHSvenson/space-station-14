@@ -8,6 +8,7 @@
       connections:
       - torso
       organs:
+        skull: BoneCycloriteSkull
         brain: OrganCycloriteBrain
         eyes: OrganCycloriteEye
         tongue: OrganCycloriteTongue
@@ -20,6 +21,8 @@
       - right leg
       - left leg
       organs:
+        ribcage: BoneCycloriteRibcage
+        hip: BoneCycloriteHip
         heart: OrganCycloriteHeart
         lungs: OrganCycloriteLungs
         stomach: OrganCycloriteStomach
@@ -30,23 +33,39 @@
       part: RightArmCyclorite
       connections:
       - right hand
+      organs:
+        bones: BoneCycloriteRightArm
     left arm:
       part: LeftArmCyclorite
       connections:
       - left hand
+      organs:
+        bones: BoneCycloriteLeftArm
     right hand:
       part: RightHandCyclorite
+      organs:
+        bones: BoneCycloriteRightHand
     left hand:
       part: LeftHandCyclorite
+      organs:
+        bones: BoneCycloriteLeftHand
     right leg:
       part: RightLegCyclorite
       connections:
       - right foot
+      organs:
+        bones: BoneCycloriteRightLeg
     left leg:
       part: LeftLegCyclorite
       connections:
       - left foot
+      organs:
+        bones: BoneCycloriteLeftLeg
     right foot:
       part: RightFootCyclorite
+      organs:
+        bones: BoneCycloriteRightFoot
     left foot:
       part: LeftFootCyclorite
+      organs:
+        bones: BoneCycloriteLeftFoot

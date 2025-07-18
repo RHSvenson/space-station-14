@@ -8,6 +8,7 @@
       connections:
       - torso
       organs:
+        skull: BoneFelionoidSkull
         brain: OrganHumanBrain
         eyes: OrganHumanEyes
         tongue: OrganHumanTongue
@@ -20,6 +21,8 @@
       - right leg
       - left leg
       organs:
+        ribcage: BoneFelionoidRibcage
+        hip: BoneFelionoidHip
         heart: OrganAnimalHeart
         lungs: OrganHumanLungs
         stomach: OrganReptilianStomach
@@ -30,23 +33,38 @@
       part: RightArmFelionoid
       connections:
       - right hand
+      organs:
+        bones: BoneFelionoidRightArm
     left arm:
       part: LeftArmFelionoid
       connections:
       - left hand
+      organs:
+        bones: BoneFelionoidLeftArm
     right hand:
       part: RightHandFelionoid
+      organs:
+        bones: BoneFelionoidRightHand
     left hand:
       part: LeftHandFelionoid
+      organs:
+        bones: BoneFelionoidLeftHand
     right leg:
       part: RightLegFelionoid
       connections:
       - right foot
+      organs: 
+        bones: BoneFelionoidRightLeg
     left leg:
       part: LeftLegFelionoid
       connections:
       - left foot
+      organs: BoneFelionoidLeftLeg
     right foot:
       part: RightFootFelionoid
+      organs:
+        bones: BoneFelionoidRightFoot
     left foot:
       part: LeftFootFelionoid
+      organs:
+        bones: BoneFelionoidLeftFoot

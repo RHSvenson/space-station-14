@@ -1,0 +1,58 @@
+- type: entity
+  id: BaseCycloriteBone
+  parent: BaseBone
+
+- type: entity
+  id: BoneCycloriteSkull
+  parent: [ BaseBoneSkull, BaseCycloriteBone ]
+  name: "a cyclorite skull"
+
+- type: entity
+  id: BoneCycloriteRibcage
+  parent: [ BaseBoneRibcage, BaseCycloriteBone ]
+  name: "a cyclorite ribcage"
+
+- type: entity
+  id: BoneCycloriteHip
+  parent: [ BaseBoneHip, BaseCycloriteBone ]
+  name: "a cyclorite hipbone"
+
+- type: entity
+  id: BoneCycloriteLeftArm
+  parent: [ BaseBoneLeftArm, BaseCycloriteBone ]
+  name: "cyclorite left arm bones"
+
+- type: entity
+  id: BoneCycloriteRightArm
+  parent: [ BaseBoneRightArm, BaseCycloriteBone ]
+  name: "cyclorite right arm bones"
+
+- type: entity
+  id: BoneCycloriteLeftHand
+  parent: [ BaseBoneLeftHand, BaseCycloriteBone ]
+  name: "cyclorite left hand bones"
+
+- type: entity
+  id: BoneCycloriteRightHand
+  parent: [ BaseBoneRightHand, BaseCycloriteBone ]
+  name: "cyclorite right hand bones"
+
+- type: entity
+  id: BoneCycloriteLeftLeg
+  parent: [ BaseBoneLeftLeg, BaseCycloriteBone ]
+  name: "cyclorite left leg bones"
+
+- type: entity
+  id: BoneCycloriteRightLeg
+  parent: [ BaseBoneRightLeg, BaseCycloriteBone ]
+  name: "cyclorite right leg bones"
+
+- type: entity
+  id: BoneCycloriteLeftFoot
+  parent: [ BaseBoneLeftFoot, BaseCycloriteBone ]
+  name: "cyclorite left foot bones"
+
+- type: entity
+  id: BoneCycloriteRightFoot
+  parent: [ BaseBoneRightFoot, BaseCycloriteBone ]
+  name: "cyclorite right foot bones"

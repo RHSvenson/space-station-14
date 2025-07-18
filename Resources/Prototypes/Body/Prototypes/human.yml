@@ -43,8 +43,12 @@
         bones: BoneHumanLeftArm
     right hand:
       part: RightHandHuman
+      organs:
+        bones: BoneHumanRightHand
     left hand:
       part: LeftHandHuman
+      organs:
+        bones: BoneHumanLeftHand
     right leg:
       part: RightLegHuman
       connections:
@@ -59,5 +63,9 @@
         bones: BoneHumanLeftLeg
     right foot:
       part: RightFootHuman
+      organs:
+        bones: BoneHumanRightFoot
     left foot:
       part: LeftFootHuman
+      organs:
+        bones: BoneHumanLeftFoot

@@ -1,0 +1,58 @@
+- type: entity
+  id: BaseDwarfBone
+  parent: BaseBone
+
+- type: entity
+  id: BoneDwarfSkull
+  parent: [ BaseBoneSkull, BaseDwarfBone ]
+  name: "a dwarf skull"
+
+- type: entity
+  id: BoneDwarfRibcage
+  parent: [ BaseBoneRibcage, BaseDwarfBone ]
+  name: "a dwarf ribcage"
+
+- type: entity
+  id: BoneDwarfHip
+  parent: [ BaseBoneHip, BaseDwarfBone ]
+  name: "a dwarf hipbone"
+
+- type: entity
+  id: BoneDwarfLeftArm
+  parent: [ BaseBoneLeftArm, BaseDwarfBone ]
+  name: "dwarf left arm bones"
+
+- type: entity
+  id: BoneDwarfRightArm
+  parent: [ BaseBoneRightArm, BaseDwarfBone ]
+  name: "dwarf right arm bones"
+
+- type: entity
+  id: BoneDwarfLeftHand
+  parent: [ BaseBoneLeftHand, BaseDwarfBone ]
+  name: "dwarf left hand bones"
+
+- type: entity
+  id: BoneDwarfRightHand
+  parent: [ BaseBoneRightHand, BaseDwarfBone ]
+  name: "dwarf right hand bones"
+
+- type: entity
+  id: BoneDwarfLeftLeg
+  parent: [ BaseBoneLeftLeg, BaseDwarfBone ]
+  name: "dwarf left leg bones"
+
+- type: entity
+  id: BoneDwarfRightLeg
+  parent: [ BaseBoneRightLeg, BaseDwarfBone ]
+  name: "dwarf right leg bones"
+
+- type: entity
+  id: BoneDwarfLeftFoot
+  parent: [ BaseBoneLeftFoot, BaseDwarfBone ]
+  name: "dwarf left foot bones"
+
+- type: entity
+  id: BoneDwarfRightFoot
+  parent: [ BaseBoneRightFoot, BaseDwarfBone ]
+  name: "dwarf right foot bones"

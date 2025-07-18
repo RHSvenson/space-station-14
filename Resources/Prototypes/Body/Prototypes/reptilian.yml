@@ -9,6 +9,7 @@
       - torso
       organs:
         brain: OrganHumanBrain
+        skull: BoneReptilianSkull
         eyes: OrganHumanEyes
         tongue: OrganHumanTongue
         eye_implant: null
@@ -20,6 +21,8 @@
       - right leg
       - left leg
       organs:
+        ribcage: BoneReptilianRibcage
+        hip: BoneReptilianHip
         heart: OrganAnimalHeart
         lungs: OrganHumanLungs
         stomach: OrganReptilianStomach
@@ -30,23 +33,39 @@
       part: RightArmReptilian
       connections:
       - right hand
+      organs:
+        bones: BoneReptilianRightArm
     left arm:
       part: LeftArmReptilian
       connections:
       - left hand
+      organs:
+        bones: BoneReptilianLeftArm
     right hand:
       part: RightHandReptilian
+      organs:
+        bones: BoneReptilianRightHand
     left hand:
       part: LeftHandReptilian
+      organs:
+        bones: BoneReptilianLeftHand
     right leg:
       part: RightLegReptilian
       connections:
       - right foot
+      organs:
+        bones: BoneReptilianRightLeg
     left leg:
       part: LeftLegReptilian
       connections:
       - left foot
+      organs:
+        bones: BoneReptilianLeftLeg
     right foot:
       part: RightFootReptilian
+      organs:
+        bones: BoneReptilianRightFoot
     left foot:
       part: LeftFootReptilian
+      organs:
+        bones: BoneReptilianLeftFoot

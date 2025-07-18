@@ -8,6 +8,7 @@
       connections:
       - torso
       organs:
+        skull: BoneAvaliSkull
         brain: OrganHumanBrain
         eyes: OrganHumanEyes
         tongue: OrganHumanTongue
@@ -20,6 +21,8 @@
       - right leg
       - left leg
       organs:
+        ribcage: BoneAvaliRibcage
+        hip: BoneAvaliHip
         heart: OrganAvaliHeart
         lungs: OrganAvaliLungs
         stomach: OrganAvaliStomach
@@ -30,23 +33,39 @@
       part: RightArmAvali
       connections:
       - right hand
+      organs:
+        bones: BoneAvaliRightArm
     left arm:
       part: LeftArmAvali
       connections:
       - left hand
+      organs:
+        bones: BoneAvaliLeftArm
     right hand:
       part: RightHandAvali
+      organs:
+        bones: BoneAvaliRightHand
     left hand:
       part: LeftHandAvali
+      organs:
+        bones: BoneAvaliLeftHand
     right leg:
       part: RightLegAvali
       connections:
       - right foot
+      organs:
+        bones: BoneAvaliRightLeg
     left leg:
       part: LeftLegAvali
       connections:
       - left foot
+      organs:
+        bones: BoneAvaliLeftLeg
     right foot:
       part: RightFootAvali
+      organs:
+        bones: BoneAvaliRightFoot
     left foot:
       part: LeftFootAvali
+      organs:
+        bones: BoneAvaliLeftFoot

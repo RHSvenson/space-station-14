@@ -111,6 +111,32 @@
       state: "r_arm"
 
 - type: entity
+  id: BaseBoneRightHand
+  parent: BaseBone
+  name: "bones from a right hand"
+  abstract: true
+  components:
+    - type: Sprite
+      sprite: Mobs/Species/Skeleton/parts.rsi
+      state: "r_hand"
+    - type: Icon
+      sprite: Mobs/Species/Skeleton/parts.rsi
+      state: "r_hand"
+
+- type: entity
+  id: BaseBoneLeftHand
+  parent: BaseBone
+  name: "bones from a left hand"
+  abstract: true
+  components:
+    - type: Sprite
+      sprite: Mobs/Species/Skeleton/parts.rsi
+      state: "l_hand"
+    - type: Icon
+      sprite: Mobs/Species/Skeleton/parts.rsi
+      state: "l_hand"
+
+- type: entity
   id: BaseBoneLeftLeg
   parent: BaseBone
   name: "bones from a left leg"
@@ -135,3 +161,29 @@
     - type: Icon
       sprite: Mobs/Species/Skeleton/parts.rsi
       state: "r_leg"
+
+- type: entity
+  id: BaseBoneRightFoot
+  parent: BaseBone
+  name: "bones from a right foot"
+  abstract: true
+  components:
+    - type: Sprite
+      sprite: Mobs/Species/Skeleton/parts.rsi
+      state: "r_foot"
+    - type: Icon
+      sprite: Mobs/Species/Skeleton/parts.rsi
+      state: "r_foot"
+
+- type: entity
+  id: BaseBoneLeftFoot
+  parent: BaseBone
+  name: "bones from a left foot"
+  abstract: true
+  components:
+    - type: Sprite
+      sprite: Mobs/Species/Skeleton/parts.rsi
+      state: "l_foot"
+    - type: Icon
+      sprite: Mobs/Species/Skeleton/parts.rsi
+      state: "l_foot"

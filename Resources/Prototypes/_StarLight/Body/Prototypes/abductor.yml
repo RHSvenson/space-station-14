@@ -8,6 +8,7 @@
       connections:
       - torso
       organs:
+        skull: BoneAbductorSkull
         brain: OrganAbductorBrain
         eyes: OrganAbductorEyes
         eye_implant: null
@@ -19,6 +20,8 @@
       - right leg
       - left leg
       organs:
+        ribcage: BoneAbductorRibcage
+        hip: BoneAbductorHip
         heart: OrganAbductorHeart
         lungs: OrganAbductorLungs
         stomach: OrganAbductorStomach
@@ -29,23 +32,39 @@
       part: RightArmAbductor
       connections:
       - right hand
+      organs:
+        bones: BoneAbductorRightArm
     left arm:
       part: LeftArmAbductor
       connections:
       - left hand
+      organs:
+        bones: BoneAbductorLeftArm
     right hand:
       part: RightHandAbductor
+      organs:
+        bones: BoneAbductorRightHand
     left hand:
       part: LeftHandAbductor
+      organs:
+        bones: BoneAbductorLeftHand
     right leg:
       part: RightLegAbductor
       connections:
       - right foot
+      organs:
+        bones: BoneAbductorRightLeg
     left leg:
       part: LeftLegAbductor
       connections:
       - left foot
+      organs:
+        bones: BoneAbductorLeftLeg
     right foot:
       part: RightFootAbductor
+      organs:
+        bones: BoneAbductorRightFoot
     left foot:
       part: LeftFootAbductor
+      organs:
+        bones: BoneAbductorLeftFoot

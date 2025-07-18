@@ -1,0 +1,58 @@
+- type: entity
+  id: BaseVoxBone
+  parent: BaseBone
+
+- type: entity
+  id: BoneVoxSkull
+  parent: [ BaseBoneSkull, BaseVoxBone ]
+  name: "a vox skull"
+
+- type: entity
+  id: BoneVoxRibcage
+  parent: [ BaseBoneRibcage, BaseVoxBone ]
+  name: "a vox ribcage"
+
+- type: entity
+  id: BoneVoxHip
+  parent: [ BaseBoneHip, BaseVoxBone ]
+  name: "a vox hipbone"
+
+- type: entity
+  id: BoneVoxLeftArm
+  parent: [ BaseBoneLeftArm, BaseVoxBone ]
+  name: "vox left arm bones"
+
+- type: entity
+  id: BoneVoxRightArm
+  parent: [ BaseBoneRightArm, BaseVoxBone ]
+  name: "vox right arm bones"
+
+- type: entity
+  id: BoneVoxLeftHand
+  parent: [ BaseBoneLeftHand, BaseVoxBone ]
+  name: "vox left hand bones"
+
+- type: entity
+  id: BoneVoxRightHand
+  parent: [ BaseBoneRightHand, BaseVoxBone ]
+  name: "vox right hand bones"
+
+- type: entity
+  id: BoneVoxLeftLeg
+  parent: [ BaseBoneLeftLeg, BaseVoxBone ]
+  name: "vox left leg bones"
+
+- type: entity
+  id: BoneVoxRightLeg
+  parent: [ BaseBoneRightLeg, BaseVoxBone ]
+  name: "vox right leg bones"
+
+- type: entity
+  id: BoneVoxLeftFoot
+  parent: [ BaseBoneLeftFoot, BaseVoxBone ]
+  name: "vox left foot bones"
+
+- type: entity
+  id: BoneVoxRightFoot
+  parent: [ BaseBoneRightFoot, BaseVoxBone ]
+  name: "vox right foot bones"

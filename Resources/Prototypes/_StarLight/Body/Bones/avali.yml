@@ -1,0 +1,58 @@
+- type: entity
+  id: BaseAvaliBone
+  parent: BaseBone
+
+- type: entity
+  id: BoneAvaliSkull
+  parent: [ BaseBoneSkull, BaseAvaliBone ]
+  name: "a avali skull"
+
+- type: entity
+  id: BoneAvaliRibcage
+  parent: [ BaseBoneRibcage, BaseAvaliBone ]
+  name: "a avali ribcage"
+
+- type: entity
+  id: BoneAvaliHip
+  parent: [ BaseBoneHip, BaseAvaliBone ]
+  name: "a avali hipbone"
+
+- type: entity
+  id: BoneAvaliLeftArm
+  parent: [ BaseBoneLeftArm, BaseAvaliBone ]
+  name: "avali left arm bones"
+
+- type: entity
+  id: BoneAvaliRightArm
+  parent: [ BaseBoneRightArm, BaseAvaliBone ]
+  name: "avali right arm bones"
+
+- type: entity
+  id: BoneAvaliLeftHand
+  parent: [ BaseBoneLeftHand, BaseAvaliBone ]
+  name: "avali left hand bones"
+
+- type: entity
+  id: BoneAvaliRightHand
+  parent: [ BaseBoneRightHand, BaseAvaliBone ]
+  name: "avali right hand bones"
+
+- type: entity
+  id: BoneAvaliLeftLeg
+  parent: [ BaseBoneLeftLeg, BaseAvaliBone ]
+  name: "avali left leg bones"
+
+- type: entity
+  id: BoneAvaliRightLeg
+  parent: [ BaseBoneRightLeg, BaseAvaliBone ]
+  name: "avali right leg bones"
+
+- type: entity
+  id: BoneAvaliLeftFoot
+  parent: [ BaseBoneLeftFoot, BaseAvaliBone ]
+  name: "avali left foot bones"
+
+- type: entity
+  id: BoneAvaliRightFoot
+  parent: [ BaseBoneRightFoot, BaseAvaliBone ]
+  name: "avali right foot bones"

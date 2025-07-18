@@ -1,0 +1,58 @@
+- type: entity
+  id: BaseArachnidBone
+  parent: BaseBone
+
+- type: entity
+  id: BoneArachnidSkull
+  parent: [ BaseBoneSkull, BaseArachnidBone ]
+  name: "a arachnid skull"
+
+- type: entity
+  id: BoneArachnidRibcage
+  parent: [ BaseBoneRibcage, BaseArachnidBone ]
+  name: "a arachnid ribcage"
+
+- type: entity
+  id: BoneArachnidHip
+  parent: [ BaseBoneHip, BaseArachnidBone ]
+  name: "a arachnid hipbone"
+
+- type: entity
+  id: BoneArachnidLeftArm
+  parent: [ BaseBoneLeftArm, BaseArachnidBone ]
+  name: "arachnid left arm bones"
+
+- type: entity
+  id: BoneArachnidRightArm
+  parent: [ BaseBoneRightArm, BaseArachnidBone ]
+  name: "arachnid right arm bones"
+
+- type: entity
+  id: BoneArachnidLeftHand
+  parent: [ BaseBoneLeftHand, BaseArachnidBone ]
+  name: "arachnid left hand bones"
+
+- type: entity
+  id: BoneArachnidRightHand
+  parent: [ BaseBoneRightHand, BaseArachnidBone ]
+  name: "arachnid right hand bones"
+
+- type: entity
+  id: BoneArachnidLeftLeg
+  parent: [ BaseBoneLeftLeg, BaseArachnidBone ]
+  name: "arachnid left leg bones"
+
+- type: entity
+  id: BoneArachnidRightLeg
+  parent: [ BaseBoneRightLeg, BaseArachnidBone ]
+  name: "arachnid right leg bones"
+
+- type: entity
+  id: BoneArachnidLeftFoot
+  parent: [ BaseBoneLeftFoot, BaseArachnidBone ]
+  name: "arachnid left foot bones"
+
+- type: entity
+  id: BoneArachnidRightFoot
+  parent: [ BaseBoneRightFoot, BaseArachnidBone ]
+  name: "arachnid right foot bones"

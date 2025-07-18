@@ -1,0 +1,58 @@
+- type: entity
+  id: BaseResomiBone
+  parent: BaseBone
+
+- type: entity
+  id: BoneResomiSkull
+  parent: [ BaseBoneSkull, BaseResomiBone ]
+  name: "a resomi skull"
+
+- type: entity
+  id: BoneResomiRibcage
+  parent: [ BaseBoneRibcage, BaseResomiBone ]
+  name: "a resomi ribcage"
+
+- type: entity
+  id: BoneResomiHip
+  parent: [ BaseBoneHip, BaseResomiBone ]
+  name: "a resomi hipbone"
+
+- type: entity
+  id: BoneResomiLeftArm
+  parent: [ BaseBoneLeftArm, BaseResomiBone ]
+  name: "resomi left arm bones"
+
+- type: entity
+  id: BoneResomiRightArm
+  parent: [ BaseBoneRightArm, BaseResomiBone ]
+  name: "resomi right arm bones"
+
+- type: entity
+  id: BoneResomiLeftHand
+  parent: [ BaseBoneLeftHand, BaseResomiBone ]
+  name: "resomi left hand bones"
+
+- type: entity
+  id: BoneResomiRightHand
+  parent: [ BaseBoneRightHand, BaseResomiBone ]
+  name: "resomi right hand bones"
+
+- type: entity
+  id: BoneResomiLeftLeg
+  parent: [ BaseBoneLeftLeg, BaseResomiBone ]
+  name: "resomi left leg bones"
+
+- type: entity
+  id: BoneResomiRightLeg
+  parent: [ BaseBoneRightLeg, BaseResomiBone ]
+  name: "resomi right leg bones"
+
+- type: entity
+  id: BoneResomiLeftFoot
+  parent: [ BaseBoneLeftFoot, BaseResomiBone ]
+  name: "resomi left foot bones"
+
+- type: entity
+  id: BoneResomiRightFoot
+  parent: [ BaseBoneRightFoot, BaseResomiBone ]
+  name: "resomi right foot bones"

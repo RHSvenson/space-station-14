@@ -1,0 +1,58 @@
+- type: entity
+  id: BaseReptilianBone
+  parent: BaseBone
+
+- type: entity
+  id: BoneReptilianSkull
+  parent: [ BaseBoneSkull, BaseReptilianBone ]
+  name: "a reptilian skull"
+
+- type: entity
+  id: BoneReptilianRibcage
+  parent: [ BaseBoneRibcage, BaseReptilianBone ]
+  name: "a reptilian ribcage"
+
+- type: entity
+  id: BoneReptilianHip
+  parent: [ BaseBoneHip, BaseReptilianBone ]
+  name: "a reptilian hipbone"
+
+- type: entity
+  id: BoneReptilianLeftArm
+  parent: [ BaseBoneLeftArm, BaseReptilianBone ]
+  name: "reptilian left arm bones"
+
+- type: entity
+  id: BoneReptilianRightArm
+  parent: [ BaseBoneRightArm, BaseReptilianBone ]
+  name: "reptilian right arm bones"
+
+- type: entity
+  id: BoneReptilianLeftHand
+  parent: [ BaseBoneLeftHand, BaseReptilianBone ]
+  name: "reptilian left hand bones"
+
+- type: entity
+  id: BoneReptilianRightHand
+  parent: [ BaseBoneRightHand, BaseReptilianBone ]
+  name: "reptilian right hand bones"
+
+- type: entity
+  id: BoneReptilianLeftLeg
+  parent: [ BaseBoneLeftLeg, BaseReptilianBone ]
+  name: "reptilian left leg bones"
+
+- type: entity
+  id: BoneReptilianRightLeg
+  parent: [ BaseBoneRightLeg, BaseReptilianBone ]
+  name: "reptilian right leg bones"
+
+- type: entity
+  id: BoneReptilianLeftFoot
+  parent: [ BaseBoneLeftFoot, BaseReptilianBone ]
+  name: "reptilian left foot bones"
+
+- type: entity
+  id: BoneReptilianRightFoot
+  parent: [ BaseBoneRightFoot, BaseReptilianBone ]
+  name: "reptilian right foot bones"

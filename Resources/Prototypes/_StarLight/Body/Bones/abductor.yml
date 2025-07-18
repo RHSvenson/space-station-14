@@ -1,0 +1,58 @@
+- type: entity
+  id: BaseAbductorBone
+  parent: BaseBone
+
+- type: entity
+  id: BoneAbductorSkull
+  parent: [ BaseBoneSkull, BaseAbductorBone ]
+  name: "a abductor skull"
+
+- type: entity
+  id: BoneAbductorRibcage
+  parent: [ BaseBoneRibcage, BaseAbductorBone ]
+  name: "a abductor ribcage"
+
+- type: entity
+  id: BoneAbductorHip
+  parent: [ BaseBoneHip, BaseAbductorBone ]
+  name: "a abductor hipbone"
+
+- type: entity
+  id: BoneAbductorLeftArm
+  parent: [ BaseBoneLeftArm, BaseAbductorBone ]
+  name: "abductor left arm bones"
+
+- type: entity
+  id: BoneAbductorRightArm
+  parent: [ BaseBoneRightArm, BaseAbductorBone ]
+  name: "abductor right arm bones"
+
+- type: entity
+  id: BoneAbductorLeftHand
+  parent: [ BaseBoneLeftHand, BaseAbductorBone ]
+  name: "abductor left hand bones"
+
+- type: entity
+  id: BoneAbductorRightHand
+  parent: [ BaseBoneRightHand, BaseAbductorBone ]
+  name: "abductor right hand bones"
+
+- type: entity
+  id: BoneAbductorLeftLeg
+  parent: [ BaseBoneLeftLeg, BaseAbductorBone ]
+  name: "abductor left leg bones"
+
+- type: entity
+  id: BoneAbductorRightLeg
+  parent: [ BaseBoneRightLeg, BaseAbductorBone ]
+  name: "abductor right leg bones"
+
+- type: entity
+  id: BoneAbductorLeftFoot
+  parent: [ BaseBoneLeftFoot, BaseAbductorBone ]
+  name: "abductor left foot bones"
+
+- type: entity
+  id: BoneAbductorRightFoot
+  parent: [ BaseBoneRightFoot, BaseAbductorBone ]
+  name: "abductor right foot bones"

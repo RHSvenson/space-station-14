@@ -1,0 +1,58 @@
+- type: entity
+  id: BaseMothBone
+  parent: BaseBone
+
+- type: entity
+  id: BoneMothSkull
+  parent: [ BaseBoneSkull, BaseMothBone ]
+  name: "a moth skull"
+
+- type: entity
+  id: BoneMothRibcage
+  parent: [ BaseBoneRibcage, BaseMothBone ]
+  name: "a moth ribcage"
+
+- type: entity
+  id: BoneMothHip
+  parent: [ BaseBoneHip, BaseMothBone ]
+  name: "a moth hipbone"
+
+- type: entity
+  id: BoneMothLeftArm
+  parent: [ BaseBoneLeftArm, BaseMothBone ]
+  name: "moth left arm bones"
+
+- type: entity
+  id: BoneMothRightArm
+  parent: [ BaseBoneRightArm, BaseMothBone ]
+  name: "moth right arm bones"
+
+- type: entity
+  id: BoneMothLeftHand
+  parent: [ BaseBoneLeftHand, BaseMothBone ]
+  name: "moth left hand bones"
+
+- type: entity
+  id: BoneMothRightHand
+  parent: [ BaseBoneRightHand, BaseMothBone ]
+  name: "moth right hand bones"
+
+- type: entity
+  id: BoneMothLeftLeg
+  parent: [ BaseBoneLeftLeg, BaseMothBone ]
+  name: "moth left leg bones"
+
+- type: entity
+  id: BoneMothRightLeg
+  parent: [ BaseBoneRightLeg, BaseMothBone ]
+  name: "moth right leg bones"
+
+- type: entity
+  id: BoneMothLeftFoot
+  parent: [ BaseBoneLeftFoot, BaseMothBone ]
+  name: "moth left foot bones"
+
+- type: entity
+  id: BoneMothRightFoot
+  parent: [ BaseBoneRightFoot, BaseMothBone ]
+  name: "moth right foot bones"

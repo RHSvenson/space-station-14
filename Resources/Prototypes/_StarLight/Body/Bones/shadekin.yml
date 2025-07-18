@@ -1,0 +1,58 @@
+- type: entity
+  id: BaseShadekinBone
+  parent: BaseBone
+
+- type: entity
+  id: BoneShadekinSkull
+  parent: [ BaseBoneSkull, BaseShadekinBone ]
+  name: "a shadekin skull"
+
+- type: entity
+  id: BoneShadekinRibcage
+  parent: [ BaseBoneRibcage, BaseShadekinBone ]
+  name: "a shadekin ribcage"
+
+- type: entity
+  id: BoneShadekinHip
+  parent: [ BaseBoneHip, BaseShadekinBone ]
+  name: "a shadekin hipbone"
+
+- type: entity
+  id: BoneShadekinLeftArm
+  parent: [ BaseBoneLeftArm, BaseShadekinBone ]
+  name: "shadekin left arm bones"
+
+- type: entity
+  id: BoneShadekinRightArm
+  parent: [ BaseBoneRightArm, BaseShadekinBone ]
+  name: "shadekin right arm bones"
+
+- type: entity
+  id: BoneShadekinLeftHand
+  parent: [ BaseBoneLeftHand, BaseShadekinBone ]
+  name: "shadekin left hand bones"
+
+- type: entity
+  id: BoneShadekinRightHand
+  parent: [ BaseBoneRightHand, BaseShadekinBone ]
+  name: "shadekin right hand bones"
+
+- type: entity
+  id: BoneShadekinLeftLeg
+  parent: [ BaseBoneLeftLeg, BaseShadekinBone ]
+  name: "shadekin left leg bones"
+
+- type: entity
+  id: BoneShadekinRightLeg
+  parent: [ BaseBoneRightLeg, BaseShadekinBone ]
+  name: "shadekin right leg bones"
+
+- type: entity
+  id: BoneShadekinLeftFoot
+  parent: [ BaseBoneLeftFoot, BaseShadekinBone ]
+  name: "shadekin left foot bones"
+
+- type: entity
+  id: BoneShadekinRightFoot
+  parent: [ BaseBoneRightFoot, BaseShadekinBone ]
+  name: "shadekin right foot bones"

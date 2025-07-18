@@ -5,27 +5,54 @@
 - type: entity
   id: BoneHumanSkull
   parent: [ BaseBoneSkull, BaseHumanBone ]
+  name: "a human skull"
 
 - type: entity
   id: BoneHumanRibcage
   parent: [ BaseBoneRibcage, BaseHumanBone ]
+  name: "a human ribcage"
 
 - type: entity
   id: BoneHumanHip
   parent: [ BaseBoneHip, BaseHumanBone ]
+  name: "a human hipbone"
 
 - type: entity
   id: BoneHumanLeftArm
   parent: [ BaseBoneLeftArm, BaseHumanBone ]
+  name: "human left arm bones"
 
 - type: entity
   id: BoneHumanRightArm
   parent: [ BaseBoneRightArm, BaseHumanBone ]
+  name: "human right arm bones"
+
+- type: entity
+  id: BoneHumanLeftHand
+  parent: [ BaseBoneLeftHand, BaseHumanBone ]
+  name: "human left hand bones"
+
+- type: entity
+  id: BoneHumanRightHand
+  parent: [ BaseBoneRightHand, BaseHumanBone ]
+  name: "human right hand bones"
 
 - type: entity
   id: BoneHumanLeftLeg
   parent: [ BaseBoneLeftLeg, BaseHumanBone ]
+  name: "human left leg bones"
 
 - type: entity
   id: BoneHumanRightLeg
   parent: [ BaseBoneRightLeg, BaseHumanBone ]
+  name: "human right leg bones"
+
+- type: entity
+  id: BoneHumanLeftFoot
+  parent: [ BaseBoneLeftFoot, BaseHumanBone ]
+  name: "human left foot bones"
+
+- type: entity
+  id: BoneHumanRightFoot
+  parent: [ BaseBoneRightFoot, BaseHumanBone ]
+  name: "human right foot bones"

@@ -1,0 +1,58 @@
+- type: entity
+  id: BaseVulpkaninBone
+  parent: BaseBone
+
+- type: entity
+  id: BoneVulpkaninSkull
+  parent: [ BaseBoneSkull, BaseVulpkaninBone ]
+  name: "a vulpkanin skull"
+
+- type: entity
+  id: BoneVulpkaninRibcage
+  parent: [ BaseBoneRibcage, BaseVulpkaninBone ]
+  name: "a vulpkanin ribcage"
+
+- type: entity
+  id: BoneVulpkaninHip
+  parent: [ BaseBoneHip, BaseVulpkaninBone ]
+  name: "a vulpkanin hipbone"
+
+- type: entity
+  id: BoneVulpkaninLeftArm
+  parent: [ BaseBoneLeftArm, BaseVulpkaninBone ]
+  name: "vulpkanin left arm bones"
+
+- type: entity
+  id: BoneVulpkaninRightArm
+  parent: [ BaseBoneRightArm, BaseVulpkaninBone ]
+  name: "vulpkanin right arm bones"
+
+- type: entity
+  id: BoneVulpkaninLeftHand
+  parent: [ BaseBoneLeftHand, BaseVulpkaninBone ]
+  name: "vulpkanin left hand bones"
+
+- type: entity
+  id: BoneVulpkaninRightHand
+  parent: [ BaseBoneRightHand, BaseVulpkaninBone ]
+  name: "vulpkanin right hand bones"
+
+- type: entity
+  id: BoneVulpkaninLeftLeg
+  parent: [ BaseBoneLeftLeg, BaseVulpkaninBone ]
+  name: "vulpkanin left leg bones"
+
+- type: entity
+  id: BoneVulpkaninRightLeg
+  parent: [ BaseBoneRightLeg, BaseVulpkaninBone ]
+  name: "vulpkanin right leg bones"
+
+- type: entity
+  id: BoneVulpkaninLeftFoot
+  parent: [ BaseBoneLeftFoot, BaseVulpkaninBone ]
+  name: "vulpkanin left foot bones"
+
+- type: entity
+  id: BoneVulpkaninRightFoot
+  parent: [ BaseBoneRightFoot, BaseVulpkaninBone ]
+  name: "vulpkanin right foot bones"

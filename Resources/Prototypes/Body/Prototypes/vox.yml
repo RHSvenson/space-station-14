@@ -8,6 +8,7 @@
       connections:
       - torso
       organs:
+        skull: BoneVoxSkull
         brain: OrganHumanBrain
         eyes: OrganHumanEyes
         tongue: OrganHumanTongue
@@ -20,6 +21,8 @@
       - right leg
       - left leg
       organs:
+        ribcage: BoneVoxRibcage
+        hip: BoneVoxHip
         heart: OrganVoxHeart
         lungs: OrganVoxLungs
         stomach: OrganVoxStomach
@@ -30,23 +33,39 @@
       part: RightArmVox
       connections:
       - right hand
+      organs:
+        bones: BoneVoxRightArm
     left arm:
       part: LeftArmVox
       connections:
       - left hand
+      organs:
+        bones: BoneVoxLeftArm
     right hand:
       part: RightHandVox
+      organs:
+        bones: BoneVoxRightHand
     left hand:
       part: LeftHandVox
+      organs:
+        bones: BoneVoxLeftHand
     right leg:
       part: RightLegVox
       connections:
       - right foot
+      organs:
+        bones: BoneVoxRightLeg
     left leg:
       part: LeftLegVox
       connections:
       - left foot
+      organs:
+        bones: BoneVoxLeftLeg
     right foot:
       part: RightFootVox
+      organs:
+        bones: BoneVoxRightFoot
     left foot:
       part: LeftFootVox
+      organs:
+        bones: BoneVoxLeftFoot

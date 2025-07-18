@@ -9,6 +9,7 @@
       - torso
       organs:
         brain: OrganHumanBrain
+        skull: BoneMothSkull
         eyes: OrganHumanEyes
         tongue: OrganHumanTongue
         eye_implant: null
@@ -20,6 +21,8 @@
       - right leg
       - left leg
       organs:
+        ribcage: BoneMothRibcage
+        hip: BoneMothHip
         heart: OrganAnimalHeart
         lungs: OrganHumanLungs
         stomach: OrganMothStomach
@@ -30,23 +33,39 @@
       part: RightArmMoth
       connections:
       - right hand
+      organs:
+        bones: BoneMothRightArm
     left arm:
       part: LeftArmMoth
       connections:
       - left hand
+      organs:
+        bones: BoneMothLeftArm
     right hand:
       part: RightHandMoth
+      organs:
+        bones: BoneMothRightHand
     left hand:
       part: LeftHandMoth
+      organs:
+        bones: BoneMothLeftHand
     right leg:
       part: RightLegMoth
       connections:
       - right foot
+      organs:
+        bones: BoneMothRightLeg
     left leg:
       part: LeftLegMoth
       connections:
       - left foot
+      organs:
+        bones: BoneMothLeftLeg
     right foot:
       part: RightFootMoth
+      organs:
+        bones: BoneMothRightFoot
     left foot:
       part: LeftFootMoth
+      organs:
+        bones: BoneMothLeftFoot

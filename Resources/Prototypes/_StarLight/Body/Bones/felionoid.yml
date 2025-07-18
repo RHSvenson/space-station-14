@@ -1,0 +1,58 @@
+- type: entity
+  id: BaseFelionoidBone
+  parent: BaseBone
+
+- type: entity
+  id: BoneFelionoidSkull
+  parent: [ BaseBoneSkull, BaseFelionoidBone ]
+  name: "a felionoid skull"
+
+- type: entity
+  id: BoneFelionoidRibcage
+  parent: [ BaseBoneRibcage, BaseFelionoidBone ]
+  name: "a felionoid ribcage"
+
+- type: entity
+  id: BoneFelionoidHip
+  parent: [ BaseBoneHip, BaseFelionoidBone ]
+  name: "a felionoid hipbone"
+
+- type: entity
+  id: BoneFelionoidLeftArm
+  parent: [ BaseBoneLeftArm, BaseFelionoidBone ]
+  name: "felionoid left arm bones"
+
+- type: entity
+  id: BoneFelionoidRightArm
+  parent: [ BaseBoneRightArm, BaseFelionoidBone ]
+  name: "felionoid right arm bones"
+
+- type: entity
+  id: BoneFelionoidLeftHand
+  parent: [ BaseBoneLeftHand, BaseFelionoidBone ]
+  name: "felionoid left hand bones"
+
+- type: entity
+  id: BoneFelionoidRightHand
+  parent: [ BaseBoneRightHand, BaseFelionoidBone ]
+  name: "felionoid right hand bones"
+
+- type: entity
+  id: BoneFelionoidLeftLeg
+  parent: [ BaseBoneLeftLeg, BaseFelionoidBone ]
+  name: "felionoid left leg bones"
+
+- type: entity
+  id: BoneFelionoidRightLeg
+  parent: [ BaseBoneRightLeg, BaseFelionoidBone ]
+  name: "felionoid right leg bones"
+
+- type: entity
+  id: BoneFelionoidLeftFoot
+  parent: [ BaseBoneLeftFoot, BaseFelionoidBone ]
+  name: "felionoid left foot bones"
+
+- type: entity
+  id: BoneFelionoidRightFoot
+  parent: [ BaseBoneRightFoot, BaseFelionoidBone ]
+  name: "felionoid right foot bones"

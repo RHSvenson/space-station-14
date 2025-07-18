@@ -8,6 +8,7 @@
       connections:
       - torso
       organs:
+        skull: BoneVulpkaninSkull
         brain: OrganHumanBrain
         eyes: OrganHumanEyes
         tongue: OrganHumanTongue
@@ -20,6 +21,8 @@
       - right leg
       - left leg
       organs:
+        ribcage: BoneVulpkaninRibcage
+        hip: BoneVulpkaninHip
         heart: OrganVulpkaninHeart
         lungs: OrganHumanLungs
         stomach: OrganVulpkaninStomach
@@ -30,23 +33,39 @@
       part: RightArmVulpkanin
       connections:
       - right hand
+      organs:
+        bones: BoneVulpkaninRightArm
     left arm:
       part: LeftArmVulpkanin
       connections:
       - left hand
+      organs:
+        bones: BoneVulpkaninLeftArm
     right hand:
       part: RightHandVulpkanin
+      organs:
+        bones: BoneVulpkaninRightArm
     left hand:
       part: LeftHandVulpkanin
+      organs:
+        bones: BoneVulpkaninLeftHand
     right leg:
       part: RightLegVulpkanin
       connections:
       - right foot
+      organs:
+        bones: BoneVulpkaninRightLeg
     left leg:
       part: LeftLegVulpkanin
       connections:
       - left foot
+      organs:
+        bones: BoneVulpkaninLeftLeg
     right foot:
       part: RightFootVulpkanin
+      organs:
+        bones: BoneVulpkaninRightFoot
     left foot:
       part: LeftFootVulpkanin
+      organs:
+        bones: BoneVulpkaninLeftFoot
