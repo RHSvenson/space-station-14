@@ -1,0 +1,8 @@
+- type: soundCollection
+  id: bonebreak
+  files:
+  - /Audio/_Starlight/Items/Bones/bonebreak1.ogg
+  - /Audio/_Starlight/Items/Bones/bonebreak2.ogg
+  - /Audio/_Starlight/Items/Bones/bonebreak3.ogg
+  - /Audio/_Starlight/Items/Bones/bonebreak4.ogg
+  - /Audio/_Starlight/Items/Bones/bonebreak5.ogg

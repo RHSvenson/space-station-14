@@ -10,7 +10,7 @@
   - type: Openable
     openableByHand: false
     sound:
-      path: /Audio/_Starlight/Items/Bones/bonebreak.ogg
+      soundCollection: bonebreak
     examineText: bone-examine-open
     closedPopup: bone-examine-closed
     closeable: false
@@ -33,7 +33,7 @@
             max: 2
       - !type:PlaySoundBehavior
         sound:
-          path: /Audio/_Starlight/Items/Bones/bonebreak.ogg
+          soundCollection: bonebreak
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
     - trigger:
@@ -43,7 +43,7 @@
       - !type:OpenBehavior
       - !type:PlaySoundBehavior
         sound:
-          path: /Audio/_Starlight/Items/Bones/bonebreak.ogg
+          soundCollection: bonebreak
   - type: DamageOnLand
     damage:
       types:
