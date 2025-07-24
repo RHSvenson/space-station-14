@@ -43,3 +43,15 @@
     Blunt: 1.25
     Cellular: 0
     Poison: 1.5
+
+- type: damageModifierSet
+  id: Bone
+  flatReductions: # Requires a certain treshold to damage.
+    Blunt: 5
+    Slash: 5
+    Piercing: 5
+    Heat: 5
+  coefficients:
+    Blunt: 1.2
+    Slash: 0.8
+    Piercing: 0.8 

@@ -6,6 +6,7 @@
   - type: Sprite
     sprite: Mobs/Species/Skeleton/parts.rsi
   - type: Organ
+  - type: Bone
   - type: Food
   - type: Openable
     openableByHand: false
@@ -18,13 +19,13 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 50
+        damage: 100
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
     - trigger:
         !type:DamageTrigger
-        damage: 20
+        damage: 30
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
@@ -57,6 +58,7 @@
     grindableSolutionName: organ
   - type: Damageable
     damageContainer: Biological
+    damageModifierSet: Bone
   - type: SolutionContainerManager
     solutions:
       organ:
@@ -84,6 +86,10 @@
   name: "a skull"
   abstract: true
   components:
+    - type: Bone
+      intendedPart: head
+      organs:
+        brain: OrganHumanBrain
     - type: Sprite
       sprite: Mobs/Species/Skeleton/parts.rsi
       state: "head_m"
@@ -97,6 +103,12 @@
   name: "a ribcage"
   abstract: true
   components:
+    - type: Bone
+      intendedPart: torso
+      organs:
+        lungs: OrganHumanLungs
+        heart: OrganHeart
+      jointEssentiality: true
     - type: Sprite
       sprite: Mobs/Species/Skeleton/parts.rsi
       state: "torso_f"
@@ -110,6 +122,9 @@
   name: "a hipbone"
   abstract: true
   components:
+    - type: Bone
+      intendedPart: torso
+      jointEssentiality: true
     - type: Sprite
       sprite: Mobs/Species/Skeleton/parts.rsi
       state: "torso_m"
@@ -123,6 +138,9 @@
   name: "bones from a left arm"
   abstract: true
   components:
+    - type: Bone
+      intendedPart: left arm
+      kineticEssentiality: true
     - type: Sprite
       sprite: Mobs/Species/Skeleton/parts.rsi
       state: "l_arm"
@@ -136,6 +154,9 @@
   name: "bones from a right arm"
   abstract: true
   components:
+    - type: Bone
+      intendedPart: right arm
+      kineticEssentiality: true
     - type: Sprite
       sprite: Mobs/Species/Skeleton/parts.rsi
       state: "r_arm"
@@ -149,6 +170,9 @@
   name: "bones from a right hand"
   abstract: true
   components:
+    - type: Bone
+      intendedPart: right hand
+      kineticEssentiality: true
     - type: Sprite
       sprite: Mobs/Species/Skeleton/parts.rsi
       state: "r_hand"
@@ -162,6 +186,9 @@
   name: "bones from a left hand"
   abstract: true
   components:
+    - type: Bone
+      intendedPart: left hand
+      kineticEssentiality: true
     - type: Sprite
       sprite: Mobs/Species/Skeleton/parts.rsi
       state: "l_hand"
@@ -175,6 +202,9 @@
   name: "bones from a left leg"
   abstract: true
   components:
+    - type: Bone
+      intendedPart: left leg
+      kineticEssentiality: true
     - type: Sprite
       sprite: Mobs/Species/Skeleton/parts.rsi
       state: "l_leg"
@@ -188,6 +218,9 @@
   name: "bones from a right leg"
   abstract: true
   components:
+    - type: Bone
+      intendedPart: right leg
+      kineticEssentiality: true
     - type: Sprite
       sprite: Mobs/Species/Skeleton/parts.rsi
       state: "r_leg"
@@ -201,6 +234,9 @@
   name: "bones from a right foot"
   abstract: true
   components:
+    - type: Bone
+      intendedPart: right foot
+      kineticEssentiality: true
     - type: Sprite
       sprite: Mobs/Species/Skeleton/parts.rsi
       state: "r_foot"
@@ -214,6 +250,9 @@
   name: "bones from a left foot"
   abstract: true
   components:
+    - type: Bone
+      intendedPart: left foot
+      kineticEssentiality: true
     - type: Sprite
       sprite: Mobs/Species/Skeleton/parts.rsi
       state: "l_foot"
