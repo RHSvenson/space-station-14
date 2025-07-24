@@ -46,10 +46,18 @@ public sealed partial class BodyPartComponent : Component
     public Dictionary<string, OrganSlot> Organs = new();
 
     /// <summary>
+    /// STARLIGHT
     /// Does this part require a bone to function?
     /// </summary>
     [DataField, AutoNetworkedField]
     public bool NeedsBone = false;
+
+    /// <summary>
+    /// STARLIGHT
+    /// How functional is this part currently? Used to apply stuff like movement debuffs.
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public int Functionality = 100; 
 
     /// <summary>
     /// These are only for VV/Debug do not use these for gameplay/systems
