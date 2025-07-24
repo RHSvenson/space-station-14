@@ -14,6 +14,14 @@ using Robust.Shared.Audio;
 using Robust.Shared.Timing;
 using System.Numerics;
 using Content.Shared.Damage.Components;
+using Content.Shared.Damage;
+using Content.Server.Destructible;
+using Content.Server.Destructible.Thresholds;
+using Content.Server.Destructible.Thresholds.Behaviors;
+using System.Linq;
+using Content.Shared.Damage.Prototypes;
+using Robust.Shared.Toolshed.Commands.Generic;
+using Robust.Shared.Random;
 
 namespace Content.Server.Body.Systems;
 
@@ -25,6 +33,9 @@ public sealed class BodySystem : SharedBodySystem
     [Dependency] private readonly MobStateSystem _mobState = default!;
     [Dependency] private readonly SharedMindSystem _mindSystem = default!;
     [Dependency] private readonly LimbSystem _limbSystem = default!;//🌟Starlight🌟
+    [Dependency] private readonly BodySystem _bodySystem = default!;// Starlight
+    [Dependency] private readonly IRobustRandom _random = default!; // Starlight
+    [Dependency] private readonly DamageableSystem _damage = default!; // Starlight
 
     public override void Initialize()
     {
@@ -74,7 +85,7 @@ public sealed class BodySystem : SharedBodySystem
             var layers = HumanoidVisualLayersExtension.Sublayers(layer.Value);
             _humanoidSystem.SetLayersVisibility(bodyEnt.Owner, layers, visible: true);
         }
-        
+
         if (TryComp<HumanoidAppearanceComponent>(bodyEnt, out var humanoid))
             _limbSystem.AddLimbVisual((bodyEnt, humanoid), partEnt); //🌟Starlight🌟
     }
@@ -96,6 +107,29 @@ public sealed class BodySystem : SharedBodySystem
 
         var layers = HumanoidVisualLayersExtension.Sublayers(layer.Value);
         _humanoidSystem.SetLayersVisibility((bodyEnt, humanoid), layers, visible: false);
+    }
+
+    private void DamagePart(
+        Entity<BodyComponent> bodyEnt,
+        EntityUid body,
+        DamageSpecifier? damage,
+        Entity<BodyPartComponent>? part
+    )
+    {
+        if (damage == null)
+        {
+            return;
+        }
+
+        /// Pick a random part until hitboxes get made
+        var root = _bodySystem.GetRootPartOrNull(bodyEnt.Owner);
+        if (root == null) { return; }
+        var parts = _bodySystem.GetAllBodyPart(root.Value.Entity, root.Value.BodyPart).ToList();
+        part = _random.Pick(parts);
+
+        /// Damage said part
+        _damage.TryChangeDamage(part, damage);
+        
     }
 
     public override HashSet<EntityUid> GibBody(
@@ -124,7 +158,7 @@ public sealed class BodySystem : SharedBodySystem
             return new HashSet<EntityUid>();
 
         var gibs = base.GibBody(bodyId, gibOrgans, body, launchGibs: launchGibs,
-            splatDirection: splatDirection, splatModifier: splatModifier, splatCone:splatCone);
+            splatDirection: splatDirection, splatModifier: splatModifier, splatCone: splatCone);
 
         var ev = new BeingGibbedEvent(gibs);
         RaiseLocalEvent(bodyId, ref ev);
@@ -133,4 +167,6 @@ public sealed class BodySystem : SharedBodySystem
 
         return gibs;
     }
+    
+
 }
