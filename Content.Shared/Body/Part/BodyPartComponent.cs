@@ -46,6 +46,12 @@ public sealed partial class BodyPartComponent : Component
     public Dictionary<string, OrganSlot> Organs = new();
 
     /// <summary>
+    /// Does this part require a bone to function?
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public bool NeedsBone = false;
+
+    /// <summary>
     /// These are only for VV/Debug do not use these for gameplay/systems
     /// </summary>
     [ViewVariables]

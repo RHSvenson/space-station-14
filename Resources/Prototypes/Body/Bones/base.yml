@@ -140,7 +140,6 @@
   components:
     - type: Bone
       intendedPart: left arm
-      kineticEssentiality: true
     - type: Sprite
       sprite: Mobs/Species/Skeleton/parts.rsi
       state: "l_arm"
@@ -156,7 +155,6 @@
   components:
     - type: Bone
       intendedPart: right arm
-      kineticEssentiality: true
     - type: Sprite
       sprite: Mobs/Species/Skeleton/parts.rsi
       state: "r_arm"
@@ -172,7 +170,6 @@
   components:
     - type: Bone
       intendedPart: right hand
-      kineticEssentiality: true
     - type: Sprite
       sprite: Mobs/Species/Skeleton/parts.rsi
       state: "r_hand"
@@ -188,7 +185,6 @@
   components:
     - type: Bone
       intendedPart: left hand
-      kineticEssentiality: true
     - type: Sprite
       sprite: Mobs/Species/Skeleton/parts.rsi
       state: "l_hand"
@@ -204,7 +200,6 @@
   components:
     - type: Bone
       intendedPart: left leg
-      kineticEssentiality: true
     - type: Sprite
       sprite: Mobs/Species/Skeleton/parts.rsi
       state: "l_leg"
@@ -220,7 +215,6 @@
   components:
     - type: Bone
       intendedPart: right leg
-      kineticEssentiality: true
     - type: Sprite
       sprite: Mobs/Species/Skeleton/parts.rsi
       state: "r_leg"
@@ -236,7 +230,6 @@
   components:
     - type: Bone
       intendedPart: right foot
-      kineticEssentiality: true
     - type: Sprite
       sprite: Mobs/Species/Skeleton/parts.rsi
       state: "r_foot"
@@ -252,7 +245,6 @@
   components:
     - type: Bone
       intendedPart: left foot
-      kineticEssentiality: true
     - type: Sprite
       sprite: Mobs/Species/Skeleton/parts.rsi
       state: "l_foot"

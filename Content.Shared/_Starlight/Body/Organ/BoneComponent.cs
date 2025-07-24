@@ -5,6 +5,7 @@ using Content.Shared.Body.Components;
 using Content.Shared.Body.Part;
 
 namespace Content.Shared.Body.Bone;
+
 public sealed partial class BoneComponent : Component
 {
     /// <summary>
