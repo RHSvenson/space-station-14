@@ -19,7 +19,7 @@
     templateId: corpse
 
 - type: entity
-  parent: [SalvageBaseCorpse, BaseMobSlime]
+  parent: [SalvageBaseCorpse, BaseMobSlimePerson]
   suffix: Dead
   save: false # mobs are currently not saveable.
   id: SalvageSlimeCorpse
