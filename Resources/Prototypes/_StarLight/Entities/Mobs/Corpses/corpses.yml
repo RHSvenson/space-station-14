@@ -47,6 +47,14 @@
   suffix: Dead
   save: false # mobs are currently not saveable.
   id: SalvageCycloriteCorpse
+  components:
+  - type: Damageable
+    damage:
+      types:
+        Asphyxiation: 83
+        Bloodloss: 48
+        Slash: 72
+        Blunt: 49
 
 - type: entity
   parent: [SalvageBaseCorpse, BaseMobShadekin]
