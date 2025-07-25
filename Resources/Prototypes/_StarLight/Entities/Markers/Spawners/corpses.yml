@@ -1,0 +1,25 @@
+- type: entity
+  name: Random Corpse Spawner
+  id: SalvageCorpseSpawner
+  parent: MarkerBase
+  components: 
+  - type: Sprite
+    sprite: Markers/jobs.rsi
+    layers:
+      - state: green
+  - type: ConditionalSpawner
+    prototypes:
+    - SalvageHumanCorpse
+    - SalvageSlimeCorpse
+    - SalvageVoxCorpse
+    - SalvageResomiCorpse
+    - SalvageAvaliCorpse
+    - SalvageCycloriteCorpse
+    - SalvageShadekinCorpse
+    - SalvageFelionoidCorpse
+    - SalvageVulpkaninCorpse
+    - SalvageReptilianCorpse
+    - SalvageArachnidCorpse
+    - SalvageMothCorpse
+    - SalvageDwarfCorpse
+    - SalvageDionaCorpse

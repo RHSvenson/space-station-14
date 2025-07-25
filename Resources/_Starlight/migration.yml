@@ -21,3 +21,6 @@ PosterContrabandGreyTide: null
 # 2025-06-28
 SyndicateWhistle: CommanderWhistle
 WeaponPistolAPS: WeaponPistolStechkin
+
+# 2025-07-25
+SalvageHumanCorpseSpawner: SalvageCorpseSpawner

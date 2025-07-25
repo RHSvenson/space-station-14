@@ -1,0 +1,105 @@
+- type: entity
+  suffix: Dead
+  save: false # mobs are currently not saveable.
+  id: SalvageBaseCorpse
+  abstract: true
+  name: unidentified corpse
+  description: I think they're dead.
+  components:
+  - type: RandomHumanoidAppearance
+    randomizeName: false
+  - type: Damageable
+    damage:
+      types:
+        Bloodloss: 49
+        Asphyxiation: 76
+        Slash: 56
+        Blunt: 19
+  - type: Inventory
+    templateId: corpse
+
+- type: entity
+  parent: [SalvageBaseCorpse, BaseMobSlime]
+  suffix: Dead
+  save: false # mobs are currently not saveable.
+  id: SalvageSlimeCorpse
+
+- type: entity
+  parent: [SalvageBaseCorpse, BaseMobVox]
+  suffix: Dead
+  save: false # mobs are currently not saveable.
+  id: SalvageVoxCorpse
+
+- type: entity
+  parent: [SalvageBaseCorpse, BaseMobResomi]
+  suffix: Dead
+  save: false # mobs are currently not saveable.
+  id: SalvageResomiCorpse
+
+- type: entity
+  parent: [SalvageBaseCorpse, BaseMobAvali]
+  suffix: Dead
+  save: false # mobs are currently not saveable.
+  id: SalvageAvaliCorpse
+
+- type: entity
+  parent: [SalvageBaseCorpse, BaseMobCyclorite]
+  suffix: Dead
+  save: false # mobs are currently not saveable.
+  id: SalvageCycloriteCorpse
+
+- type: entity
+  parent: [SalvageBaseCorpse, BaseMobShadekin]
+  suffix: Dead
+  save: false # mobs are currently not saveable.
+  id: SalvageShadekinCorpse
+  components:
+  - type: Damageable
+    damage:
+      types:
+        Bloodloss: 123
+        Slash: 72
+        Blunt: 46
+
+- type: entity
+  parent: [SalvageBaseCorpse, BaseMobFelionoid]
+  suffix: Dead
+  save: false # mobs are currently not saveable.
+  id: SalvageFelionoidCorpse
+
+- type: entity
+  parent: [SalvageBaseCorpse, BaseMobVulpkanin]
+  suffix: Dead
+  save: false # mobs are currently not saveable.
+  id: SalvageVulpkaninCorpse
+  name: unidentified corpse
+
+- type: entity
+  parent: [SalvageBaseCorpse, BaseMobReptilian]
+  suffix: Dead
+  save: false # mobs are currently not saveable.
+  id: SalvageReptilianCorpse
+
+- type: entity
+  parent: [SalvageBaseCorpse, BaseMobArachnid]
+  suffix: Dead
+  save: false # mobs are currently not saveable.
+  id: SalvageArachnidCorpse
+
+- type: entity
+  parent: [SalvageBaseCorpse, BaseMobMoth]
+  suffix: Dead
+  save: false # mobs are currently not saveable.
+  id: SalvageMothCorpse
+
+- type: entity
+  parent: [SalvageBaseCorpse, BaseMobDwarf]
+  suffix: Dead
+  save: false # mobs are currently not saveable.
+  id: SalvageDwarfCorpse
+
+- type: entity
+  parent: [SalvageBaseCorpse, BaseMobDiona]
+  suffix: Dead
+  save: false # mobs are currently not saveable.
+  id: SalvageDionaCorpse
