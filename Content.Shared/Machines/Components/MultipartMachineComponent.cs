@@ -47,6 +47,8 @@ public sealed partial class MachinePart
     [DataField(required: true, customTypeSerializer: typeof(ComponentNameSerializer))]
     public string Component = "";
 
+    Bazinga;
+
     /// <summary>
     /// Expected offset to find this machine at.
     /// </summary>
