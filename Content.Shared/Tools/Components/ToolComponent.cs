@@ -26,10 +26,16 @@ public sealed partial class ToolComponent : Component
 /// Attempt event called *before* any do afters to see if the tool usage should succeed or not.
 /// Raised on both the tool and then target.
 /// </summary>
-public sealed class ToolUseAttemptEvent(EntityUid user, float fuel) : CancellableEntityEventArgs
+public sealed class ToolUseAttemptEvent(EntityUid user, float fuel, IEnumerable<string>? attemptQualities) : CancellableEntityEventArgs
 {
     public EntityUid User { get; } = user;
     public float Fuel = fuel;
+
+    /// <summary>
+    /// STARLIGHT
+    /// Field used to ensure that operation undertaken actually involves welding, to fix omnitools.
+    /// </summary>
+    public IEnumerable<string>? AttemptQualities = attemptQualities;
 }
 
 /// <summary>

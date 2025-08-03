@@ -166,7 +166,7 @@ public abstract partial class SharedToolSystem : EntitySystem
         if (!CanStartToolUse(tool, user, target, fuel, toolQualitiesNeeded, toolComponent))
             return false;
 
-        var toolEvent = new ToolDoAfterEvent(fuel, doAfterEv, GetNetEntity(target));
+        var toolEvent = new ToolDoAfterEvent(fuel, doAfterEv, GetNetEntity(target), toolQualitiesNeeded); /// Toolqualities is STARLIGHT
         var doAfterArgs = new DoAfterArgs(EntityManager, user, delay / toolComponent.SpeedModifier, toolEvent, tool, target: target, used: tool)
         {
             BreakOnDamage = true,
@@ -249,7 +249,7 @@ public abstract partial class SharedToolSystem : EntitySystem
             return false;
 
         // check if the tool allows being used
-        var beforeAttempt = new ToolUseAttemptEvent(user, fuel);
+        var beforeAttempt = new ToolUseAttemptEvent(user, fuel, toolQualitiesNeeded); /// Starlight toolqualities
         RaiseLocalEvent(tool, beforeAttempt);
         if (beforeAttempt.Cancelled)
             return false;
@@ -280,17 +280,26 @@ public abstract partial class SharedToolSystem : EntitySystem
         [DataField("wrappedEvent")]
         public DoAfterEvent WrappedEvent = default!;
 
+        /// <summary>
+        /// STARLIGHT
+        /// Field used to ensure event quality, used to stop welding system from taking
+        /// fuel from Omnitools
+        /// </summary>
+        [DataField]
+        public IEnumerable<string>? EventQualities;
+
         private ToolDoAfterEvent()
         {
         }
 
-        public ToolDoAfterEvent(float fuel, DoAfterEvent wrappedEvent, NetEntity? originalTarget)
+        public ToolDoAfterEvent(float fuel, DoAfterEvent wrappedEvent, NetEntity? originalTarget, IEnumerable<string>? eventQualities = null)
         {
             DebugTools.Assert(wrappedEvent.GetType().HasCustomAttribute<NetSerializableAttribute>(), "Tool event is not serializable");
 
             Fuel = fuel;
             WrappedEvent = wrappedEvent;
             OriginalTarget = originalTarget;
+            EventQualities = eventQualities; /// Starlight
         }
 
         public override DoAfterEvent Clone()
@@ -301,7 +310,7 @@ public abstract partial class SharedToolSystem : EntitySystem
             if (evClone == WrappedEvent)
                 return this;
 
-            return new ToolDoAfterEvent(Fuel, evClone, OriginalTarget);
+            return new ToolDoAfterEvent(Fuel, evClone, OriginalTarget, EventQualities); /// Starlight Eventqualities
         }
 
         public override bool IsDuplicate(DoAfterEvent other)

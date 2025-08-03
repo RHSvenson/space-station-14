@@ -1,3 +1,4 @@
+using System.Linq;
 using Content.Shared.ActionBlocker;
 using Content.Shared.Chemistry.Components;
 using Content.Shared.Chemistry.Components.SolutionManager;
@@ -21,7 +22,7 @@ public abstract partial class SharedToolSystem
         SubscribeLocalEvent<WelderComponent, AfterInteractEvent>(OnWelderAfterInteract);
 
         SubscribeLocalEvent<WelderComponent, ToolUseAttemptEvent>((uid, comp, ev) => {
-            CanCancelWelderUse((uid, comp), ev.User, ev.Fuel, ev);
+            CanCancelWelderUse((uid, comp), ev.User, ev.Fuel, ev, ev.AttemptQualities); ///AttemptQualities is STARLIGHT
         });
         SubscribeLocalEvent<WelderComponent, DoAfterAttemptEvent<ToolDoAfterEvent>>((uid, comp, ev) => {
             CanCancelWelderUse((uid, comp), ev.Event.User, ev.Event.Fuel, ev);
@@ -131,8 +132,15 @@ public abstract partial class SharedToolSystem
         }
     }
 
-    private void CanCancelWelderUse(Entity<WelderComponent> entity, EntityUid user, float requiredFuel, CancellableEntityEventArgs ev)
+    private void CanCancelWelderUse(Entity<WelderComponent> entity, EntityUid user, float requiredFuel, CancellableEntityEventArgs ev, IEnumerable<string>? attemptQualities = null)
     {
+        /// STARLIGHT: Patchjob to stop welding code from interrupting stuff that has nothing to do with it
+        if (attemptQualities != null
+        && !attemptQualities.Contains("Welding"))
+        {
+            return;
+        }
+
         if (!ItemToggle.IsActivated(entity.Owner))
         {
             _popup.PopupClient(Loc.GetString("welder-component-welder-not-lit-message"), entity, user);
@@ -150,6 +158,10 @@ public abstract partial class SharedToolSystem
 
     private void OnWelderDoAfter(Entity<WelderComponent> ent, ref ToolDoAfterEvent args)
     {
+        /// Starlight if statement, similar to above.
+        if (args.EventQualities != null
+            && !args.EventQualities.Contains("Welding"))
+            return;
         if (args.Cancelled)
             return;
 
