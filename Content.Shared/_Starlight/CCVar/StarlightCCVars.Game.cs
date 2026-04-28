@@ -63,4 +63,9 @@ public sealed partial class StarlightCCVars
     /// </summary>
     public static readonly CVarDef<int> EndRoundTimeVoteAmount =
         CVarDef.Create("game.round_end_time_vote_amount", 3, CVar.SERVERONLY);
+    /// <summary>
+    /// The time in seconds that it will take the round to end after the nuke explodes durign nukies.
+    /// </summary>
+    public static readonly CVarDef<float> NukeRoundRestartTime =
+        CVarDef.Create("game.nuke_round_restart_time", 20f, CVar.SERVERONLY);
 }
