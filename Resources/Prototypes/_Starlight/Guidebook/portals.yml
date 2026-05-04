@@ -82,4 +82,41 @@
   text: "/ServerInfo/Guidebook/StarlightSOP/CommandSOP/command-sop-intro.xml"
   children:
     - captain
-    - ai
+    - security-sop-headofsecurity
+
+- type: guideEntry
+  id: security-portal-sop
+  name: guide-entry-sl-security-portal-sop
+  text: "/ServerInfo/Guidebook/StarlightSOP/SecuritySOP/security-sop-intro.xml"
+  children:
+  - security-sop-cadet
+  - security-sop-securityofficer
+  - security-sop-dutyofficer
+  - security-sop-detective
+  - security-sop-brigmedic
+  - security-sop-warden
+  - security-sop-headofsecurity
+  - security-sop-prisonertreatment
+  - security-sop-parole
+  - security-sop-permitacquisition
+  - security-sop-specialsituations
+
+- type: guideEntry
+  id: nt-portal-sop
+  name: guide-entry-sl-nt-portal-sop
+  text: "/ServerInfo/Guidebook/StarlightSOP/NanoTrasenEmployeeSOP/nano-trasen-employee-sop-intro.xml"
+  children:
+      - nano-trasen-employee-sop-nt-rep
+      - nano-trasen-employee-sop-bso
+      - nano-trasen-employee-sop-magistrate
+      - nano-trasen-employee-sop-iaa
+      - nano-trasen-employee-sop-nct
+
+- type: guideEntry
+  id: engineering-portal-sop
+  name: guide-entry-sl-engineering-portal-sop
+  text: "/ServerInfo/Guidebook/StarlightSOP/EngineeringSOP/engineering-sop-intro.xml"
+  priority: 5
+  children:
+      - engineering-sop-genproc-intro
+      - engineering-sop-staff-intro
