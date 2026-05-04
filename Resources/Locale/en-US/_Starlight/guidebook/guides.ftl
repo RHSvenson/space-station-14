@@ -174,3 +174,12 @@ guide-entry-roleplay-01 = The Basics
 guide-entry-roleplay-02 = Collaborative Storytelling
 guide-entry-roleplay-03 = Losing Is Fun
 guide-entry-roleplay-04 = Acting With Mechanics
+
+# Portals
+guide-entry-sl-security-portal = Security Portal
+guide-entry-sl-command-portal = Command Portal
+guide-entry-sl-engineering-portal = Enginnering Portal
+guide-entry-sl-science-portal = Science Portal
+guide-entry-sl-cargo-portal = Cargo Portal
+guide-entry-sl-medical-portal = Medical Portal
+guide-entry-sl-service-portal = Service Portal

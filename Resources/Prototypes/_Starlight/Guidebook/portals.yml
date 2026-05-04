@@ -1,0 +1,85 @@
+﻿# Portals
+
+- type: guideEntry
+  id: CommandPortal
+  name: guide-entry-sl-command-portal
+  text: "/ServerInfo/Guidebook/StarlightPortals/command-portal.xml"
+  children:
+    - command-portal-sop
+    - command-portal-guide
+
+- type: guideEntry
+  id: NanoTrasenPortal
+  name: guide-entry-sl-nt-portal
+  text: "/ServerInfo/Guidebook/StarlightPortals/nt-portal.xml"
+  children:
+    - nt-portal-sop
+    - nt-portal-guide
+
+- type: guideEntry
+  id: LegalPortal
+  name: guide-entry-sl-legal-portal
+  text: "/ServerInfo/Guidebook/StarlightPortals/legal-portal.xml"
+  children:
+    - legal-portal-sop
+    - legal-portal-guide
+
+- type: guideEntry
+  id: SecurityPortal
+  name: guide-entry-sl-security-portal
+  text: "/ServerInfo/Guidebook/StarlightPortals/security-portal.xml"
+  children:
+    - security-portal-sop
+    - security-portal-guide
+    - SpaceLaw
+
+- type: guideEntry
+  id: EngineeringPortal
+  name: guide-entry-sl-engineering-portal
+  text: "/ServerInfo/Guidebook/StarlightPortals/engineering-portal.xml"
+  children:
+    - engineering-portal-sop
+    - engineering-portal-guide
+
+- type: guideEntry
+  id: SciencePortal
+  name: guide-entry-sl-science-portal
+  text: "/ServerInfo/Guidebook/StarlightPortals/science-portal.xml"
+  children:
+    - science-portal-sop
+    - science-portal-guide
+
+- type: guideEntry
+  id: ServicePortal
+  name: guide-entry-sl-service-portal
+  text: "/ServerInfo/Guidebook/StarlightPortals/service-portal.xml"
+  children:
+    - service-portal-sop
+    - service-portal-guide
+
+- type: guideEntry
+  id: CargoPortal
+  name: guide-entry-sl-cargo-portal
+  text: "/ServerInfo/Guidebook/StarlightPortals/cargo-portal.xml"
+  children:
+    - cargo-portal-sop
+    - cargo-portal-guide
+
+- type: guideEntry
+  id: MedicalPortal
+  name: guide-entry-sl-medical-portal
+  text: "/ServerInfo/Guidebook/StarlightPortals/medical-portal.xml"
+  children:
+    - medical-portal-sop
+    - medical-portal-guide
+
+# Duplicate pages to be more legible via portals
+# SOP
+
+- type: guideEntry
+  id: command-portal-sop
+  name: guide-entry-sl-command-portal-sop
+  text: "/ServerInfo/Guidebook/StarlightSOP/CommandSOP/command-sop-intro.xml"
+  children:
+    - captain
+    - ai
