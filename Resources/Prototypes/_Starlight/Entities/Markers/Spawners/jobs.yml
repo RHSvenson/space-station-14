@@ -124,6 +124,20 @@
         - state: jobicon
 
 - type: entity
+  id: SpawnPointSecuritySergeant
+  parent: SpawnPointJobBase
+  name: securitysergeant
+  components:
+    - type: SpawnPoint
+      job_id: SecuritySergeant
+    - type: Sprite
+      sprite: _Starlight/Markers/jobs.rsi
+      layers:
+        - state: green
+        - state: securitysergeant
+        - state: jobicon
+
+- type: entity
   id: SpawnPointPerformer
   parent: SpawnPointJobBase
   name: performer

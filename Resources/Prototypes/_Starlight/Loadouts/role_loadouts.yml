@@ -188,6 +188,28 @@
   - GroupSpeciesBreathToolSecurity
 
 - type: roleLoadout
+  id: JobSecuritySergeant
+  groups:
+  - SecuritySergeantHead
+  - SecurityMask # Starlight
+  - SecuritySergeantJumpsuit
+  - SecurityBackpack
+  - SecurityEyewear
+  - SecuritySergeantOuterClothing
+  - SecuritySergeantBelt
+  - SecurityTie
+  - SecurityShoes
+  - SecurityGloves
+  - SecurityNonLethalWeapon
+  - SurvivalExtended
+  - Trinkets
+  - Scarves
+  - Pins
+  - Pens
+  - SecurityJobTrinkets
+  - GroupSpeciesBreathToolSecurity
+
+- type: roleLoadout
   id: JobSalvageLead
   groups:
     - GroupTankHarness

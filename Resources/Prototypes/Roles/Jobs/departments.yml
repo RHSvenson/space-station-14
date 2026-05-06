@@ -119,6 +119,7 @@
   weight: 20
   roles:
   - HeadOfSecurity
+  - SecuritySergeant # Starlight
   - SecurityCadet
   - SecurityOfficer
   - Brigmedic

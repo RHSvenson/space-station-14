@@ -1,0 +1,28 @@
+﻿# Head
+
+- type: loadout
+  id: SecuritySergeantBeret
+  equipment:
+    head: ClothingHeadHatSecuritySergeantBeret
+
+- type: loadout
+  id: SecuritySergeantHatDrill
+  equipment:
+    head: ClothingHeadHatDrilltrainer
+
+# Jumpsuit
+- type: loadout
+  id: SecuritySergeantJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSeniorOfficer
+
+- type: loadout
+  id: SecuritySergeantJumpskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtSeniorOfficer
+
+# Belt
+- type: loadout
+  id: SecuritySergeantBelt
+  equipment:
+    belt: ClothingBeltSecurityFilled

@@ -971,6 +971,42 @@
   - SecurityBomber
   - WindbreakerSecurity
 
+# Security Sergeant
+- type: loadoutGroup
+  id: SecuritySergeantHead
+  name: loadout-group-securitysergeant-head
+  loadouts:
+  - SecuritySergeantHatDrill
+  - SecuritySergeantBeret
+
+- type: loadoutGroup
+  id: SecuritySergeantJumpsuit
+  name: loadout-group-securitysergeant-jumpsuit
+  loadouts:
+  - SecuritySergeantJumpsuit
+  - SecuritySergeantJumpskirt
+
+- type: loadoutGroup
+  id: SecuritySergeantBelt
+  name: loadout-group-securitysergeant-belt
+  loadouts:
+    - SecuritySergeantBelt
+
+- type: loadoutGroup
+  id: SecuritySergeantOuterClothing
+  name: loadout-group-securitysergeant-outerclothing
+  minLimit: 0
+  defaultSelected: 1
+  loadouts:
+  - ArmorVest
+  - ArmorVestSlim
+  - ArmorVestPlate
+  - ArmorVestStab
+  - ArmorVestHeatAbsorb
+  - SecurityOfficerWintercoat
+  - SecurityBomber
+  - WindbreakerSecurity
+
 # Brighteye
 - type: loadoutGroup
   id: BrighteyeJumpsuit

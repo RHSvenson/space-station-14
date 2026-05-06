@@ -241,6 +241,27 @@
     job: DutyOfficer
 
 - type: entity
+  parent: [ IDCardStandard, BaseSecurityContraband ]
+  id: SecuritySergeantIDCard
+  name: security sergeant ID card
+  components:
+  - type: Sprite
+    sprite: _Starlight/Objects/Misc/id_cards.rsi
+    layers:
+    - state: default
+    - sprite: *id-rsi
+      state: stripe_top
+      color: *color-security-top
+    - sprite: *id-rsi
+      state: stripe_bottom
+      color: *color-security-bottom
+    - sprite: *starlight-icon-rsi
+      offset: *icon-offset
+      state: SecuritySergeant
+  - type: PresetIdCard
+    job: SecuritySergeant
+
+- type: entity
   parent: IDCardStandard
   id: SovietIdCard
   name: soviet id card

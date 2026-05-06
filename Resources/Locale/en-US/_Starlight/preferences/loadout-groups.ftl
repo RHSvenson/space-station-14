@@ -57,6 +57,11 @@ loadout-group-dutyofficer-jumpsuit = Duty officer jumpsuit
 loadout-group-dutyofficer-outerclothing = Duty officer outer clothing
 loadout-group-dutyofficer-belt = Duty officer belt
 
+loadout-group-securitysergeant-head = Security Sergeant head
+loadout-group-securitysergeant-jumpsuit = Security Sergeant jumpsuit
+loadout-group-securitysergeant-belt = Security Sergeant belt
+loadout-group-securitysergeant-outerclothing = Security Sergeant outer clothing
+
 
 # Law
 loadout-group-magistrate-jumpsuit = Magistrate jumpsuit

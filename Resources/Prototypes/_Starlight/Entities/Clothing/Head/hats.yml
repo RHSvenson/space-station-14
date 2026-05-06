@@ -200,6 +200,22 @@
         - HamsterWearable
         - WhitelistChameleon
 
+- type: entity
+  parent: [ClothingHeadBase, BaseSecurityContraband]
+  id: ClothingHeadHatSecuritySergeantBeret
+  name: security sergeant beret
+  description: Show 'em what real security looks like.
+  components:
+    - type: Sprite
+      sprite: _Starlight/Clothing/Head/Hats/beret_securitysergeant.rsi
+    - type: Clothing
+      sprite: _Starlight/Clothing/Head/Hats/beret_securitysergeant.rsi
+    - type: Tag
+      tags:
+        - ClothMade
+        - Recyclable
+        - WhitelistChameleon
+
 #USSP
 - type: entity
   parent: [ClothingHeadBase, BaseSovietContraband]

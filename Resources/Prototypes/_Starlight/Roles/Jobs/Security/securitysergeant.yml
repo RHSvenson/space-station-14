@@ -1,0 +1,32 @@
+﻿- type: job
+  id: SecuritySergeant
+  name: job-name-securitysergeant
+  description: job-description-securitysergeant
+  playTimeTracker: JobSecuritySergeant
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobSecurityOfficer
+      time: 72000 # 20 hrs
+  startingGear: SecuritySergeantGear
+  icon: "JobIconSecuritySergeant"
+  supervisors: job-supervisors-hos
+  canBeAntag: false
+  access:
+  - Security
+  - Brig
+  - Maintenance
+  - External
+  - Cryogenics # Officer gets this for some reason, so making it consistent.
+
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+
+- type: startingGear
+  id: SecuritySergeantGear
+  equipment:
+    id: SecuritySergeantPDA
+    ears: ClothingHeadsetSecurity
+  storage:
+    back:
+      - Flash
