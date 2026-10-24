@@ -1,6 +1,8 @@
 using System.IO;
 using System.Linq;
 using System.Numerics;
+using System.Text.RegularExpressions;
+using Content.Shared._Blimpuf.IdentityManagement; // Blimpuf
 using Content.Shared.CCVar;
 using Content.Shared.Decals;
 using Content.Shared.Examine;
@@ -17,6 +19,7 @@ using Robust.Shared.GameObjects.Components.Localization;
 using Robust.Shared.Network;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
+using Robust.Shared.Random; // Blimpuf
 using Robust.Shared.Serialization.Manager;
 using Robust.Shared.Serialization.Markdown;
 using Robust.Shared.Utility;
@@ -46,6 +49,7 @@ public abstract partial class SharedHumanoidAppearanceSystem : EntitySystem
     [Dependency] private MarkingManager _markingManager = default!;
     [Dependency] private GrammarSystem _grammarSystem = default!;
     [Dependency] private IdentitySystem _identity = default!;
+    [Dependency] private IRobustRandom _random = default!; // Blimpuf
 
     public static readonly ProtoId<SpeciesPrototype> DefaultSpecies = "Human";
 
@@ -146,6 +150,22 @@ public abstract partial class SharedHumanoidAppearanceSystem : EntitySystem
         var species = GetSpeciesRepresentation(component.Species, component.CustomSpecieName).ToLower(); // Starlight edit
         var age = GetAgeRepresentation(component.Species, component.Age);
 
+        // Blimpuf start - use the examine pronoun choice without changing identity grammar.
+        if (TryComp<BlimpufIdentityPronounsComponent>(identity, out var pronouns))
+        {
+            // The server replaces the initial client tooltip; let it choose once to avoid a pronoun flicker.
+            if (_netManager.IsClient && !IsClientSide(uid))
+                return;
+
+            if (args.UseSecondaryPronouns ??= _random.Prob(0.5f))
+            {
+                args.PushText(Loc.GetString("blimpuf-humanoid-appearance-component-examine",
+                    ("gender", pronouns.SecondaryGender.ToString().ToLowerInvariant()), ("age", age), ("species", species)));
+                return;
+            }
+        }
+        // Blimpuf end
+
         args.PushText(Loc.GetString("humanoid-appearance-component-examine", ("user", identity), ("age", age), ("species", species)));
     }
 
@@ -194,6 +214,7 @@ public abstract partial class SharedHumanoidAppearanceSystem : EntitySystem
         targetHumanoid.MarkingSet = new(sourceHumanoid.MarkingSet);
 
         SetSex(target, sourceHumanoid.Sex, false, targetHumanoid);
+        targetHumanoid.SecondaryGender = sourceHumanoid.SecondaryGender; // Blimpuf
         SetGender((target, targetHumanoid), sourceHumanoid.Gender);
 
         // Starlight start
@@ -550,6 +571,8 @@ public abstract partial class SharedHumanoidAppearanceSystem : EntitySystem
         SetTTSVoice(uid, profile.Voice, humanoid);
 
         humanoid.Gender = profile.Gender;
+        humanoid.SecondaryGender = profile.SecondaryGender; // Blimpuf
+        _identity.QueueIdentityUpdate(uid); // Blimpuf
         if (TryComp<GrammarComponent>(uid, out var grammar))
         {
             _grammarSystem.SetGender((uid, grammar), profile.Gender);

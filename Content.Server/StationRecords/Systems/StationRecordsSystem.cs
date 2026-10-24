@@ -102,7 +102,7 @@ public sealed partial class StationRecordsSystem : SharedStationRecordsSystem
             specie = profile.CustomSpecieName + " (" + profile.Species + ")";
         /// Starlight - End
 
-        CreateGeneralRecord(station, idUid.Value, Name(player), profile.Age, specie, profile.Gender, jobId, fingerprintComponent?.Fingerprint, dnaComponent?.DNA, profile, records); // Starlight Edited (profile.Species -> specie, profile.Name -> Name(player) so the record matches the ID card's name)
+        CreateGeneralRecord(station, idUid.Value, profile.Name, profile.Age, specie, profile.Gender, profile.SecondaryGender, jobId, fingerprintComponent?.Fingerprint, dnaComponent?.DNA, profile, records); // Starlight Edited (profile.Species -> specie); Blimpuf - add secondary pronoun
     }
 
 
@@ -119,6 +119,7 @@ public sealed partial class StationRecordsSystem : SharedStationRecordsSystem
     /// <param name="name">Name of the character.</param>
     /// <param name="species">Species of the character.</param>
     /// <param name="gender">Gender of the character.</param>
+    /// <param name="secondaryGender">Optional secondary pronoun set.</param>
     /// <param name="jobId">
     ///     The job to initially tie this record to. This must be a valid job loaded in, otherwise
     ///     this call will cause an exception. Ensure that a general record starts out with a job
@@ -140,6 +141,7 @@ public sealed partial class StationRecordsSystem : SharedStationRecordsSystem
         int age,
         string species,
         Gender gender,
+        Gender? secondaryGender, // Blimpuf
         string jobId,
         string? mobFingerprint,
         string? dna,
@@ -166,6 +168,7 @@ public sealed partial class StationRecordsSystem : SharedStationRecordsSystem
             JobPrototype = jobId,
             Species = species,
             Gender = gender,
+            SecondaryGender = secondaryGender, // Blimpuf
             DisplayPriority = jobPrototype.RealDisplayWeight,
             Fingerprint = mobFingerprint,
             DNA = dna,

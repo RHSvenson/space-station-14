@@ -86,6 +86,11 @@ namespace Content.Shared.Preferences
         [DataField]
         public Gender Gender { get; private set; } = Gender.Male;
 
+        // Blimpuf start
+        [DataField]
+        public Gender? SecondaryGender { get; private set; }
+        // Blimpuf end
+
         /// <summary>
         /// Stores markings, eye colors, etc for the profile.
         /// </summary>
@@ -196,6 +201,7 @@ namespace Content.Shared.Preferences
                 other.Enabled,
                 other.SpeciesLoadout) // Far Horizons
         {
+            SecondaryGender = other.SecondaryGender; // Blimpuf
             // Cosmatic Drift Record System-start
             CDCharacterRecords = other.CDCharacterRecords != null
                 ? new PlayerProvidedCharacterRecords(other.CDCharacterRecords)
@@ -340,6 +346,13 @@ namespace Content.Shared.Preferences
         {
             return new(this) { Gender = gender };
         }
+
+        // Blimpuf start
+        public HumanoidCharacterProfile WithSecondaryGender(Gender? gender)
+        {
+            return new(this) { SecondaryGender = gender };
+        }
+        // Blimpuf end
 
         public HumanoidCharacterProfile WithVoice(string id)
         {
@@ -505,6 +518,7 @@ namespace Content.Shared.Preferences
             if (Age != other.Age) return false;
             if (Sex != other.Sex) return false;
             if (Gender != other.Gender) return false;
+            if (SecondaryGender != other.SecondaryGender) return false; // Blimpuf
             if (Species != other.Species) return false;
             if (CustomSpecieName != other.CustomSpecieName) return false; // Starlight
             if (!Cybernetics.SequenceEqual(other.Cybernetics)) return false; // Starlight
@@ -538,6 +552,7 @@ namespace Content.Shared.Preferences
             if (Age != other.Age) throw new DebugAssertException($"Age doesn't match expected '{Age}' got '{other.Age}'");
             if (Sex != other.Sex) throw new DebugAssertException($"Sex doesn't match expected '{Sex}' got '{other.Sex}'");
             if (Gender != other.Gender) throw new DebugAssertException($"Gender doesn't match expected '{Gender}' got '{other.Gender}'");;
+            if (SecondaryGender != other.SecondaryGender) throw new DebugAssertException($"SecondaryGender doesn't match expected '{SecondaryGender}' got '{other.SecondaryGender}'"); // Blimpuf
             if (Species != other.Species) throw new DebugAssertException($"Species doesn't match expected '{Species.Id}' got '{other.Species.Id}'");;
             if (CustomSpecieName != other.CustomSpecieName) throw new DebugAssertException($"CustomSpecieName doesn't match expected '{CustomSpecieName}' got '{other.CustomSpecieName}'");
             if (!Cybernetics.SequenceEqual(other.Cybernetics)) throw new DebugAssertException($"Cybernetics doesn't match expected '{Cybernetics}' got '{other.Cybernetics}'");
@@ -599,6 +614,16 @@ namespace Content.Shared.Preferences
                 Gender.Neuter => Gender.Neuter,
                 _ => Gender.Epicene // Invalid enum values.
             };
+
+            // Blimpuf start - check that primary + secondary gender are both different and valid
+            var secondaryGender = SecondaryGender switch
+            {
+                Gender.Male or Gender.Female or Gender.Epicene or Gender.Neuter => SecondaryGender,
+                _ => null
+            };
+            if (secondaryGender == gender)
+                secondaryGender = null;
+            // Blimpuf end
 
             string name;
             var maxNameLength = configManager.GetCVar(CCVars.MaxNameLength);
@@ -710,6 +735,7 @@ namespace Content.Shared.Preferences
             Age = age;
             Sex = sex;
             Gender = gender;
+            SecondaryGender = secondaryGender; // Blimpuf
             Appearance = appearance;
             SpawnPriority = spawnPriority;
 
@@ -844,6 +870,7 @@ namespace Content.Shared.Preferences
             hashCode.Add(Age);
             hashCode.Add((int)Sex);
             hashCode.Add((int)Gender);
+            hashCode.Add(SecondaryGender); // Blimpuf
             hashCode.Add(Appearance);
             hashCode.Add((int)SpawnPriority);
             hashCode.Add(Enabled);
