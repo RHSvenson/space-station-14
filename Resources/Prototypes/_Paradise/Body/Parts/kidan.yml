@@ -1,0 +1,129 @@
+﻿- type: entity
+  id: PartKidan
+  parent: [BaseItem, BasePart]
+  name: "kidan body part"
+  abstract: true
+  components:
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: UncookedAnimalProteins
+        Quantity: 10
+      - ReagentId: Fat
+        Quantity: 10
+      - reagentId : Blood
+        Quantity: 10
+
+- type: entity
+  id: TorsoKidan
+  name: "kidan torso"
+  parent: [PartKidan, BaseTorso]
+  components:
+  - type: Sprite
+    sprite: Mobs/Species/_Paradise/Kidan/parts.rsi
+    state: "torso"
+  - type: Icon
+    sprite: Mobs/Species/_Paradise/Kidan/parts.rsi
+    state: "torso"
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: UncookedAnimalProteins
+        Quantity: 20
+      - ReagentId: Fat
+        Quantity: 20
+      - reagentId : Blood
+        Quantity: 40
+
+- type: entity
+  id: HeadKidan
+  name: "kidan head"
+  parent: [PartKidan, BaseHead]
+  components:
+  - type: Sprite
+    sprite: Mobs/Species/_Paradise/Kidan/parts.rsi
+    state: "head"
+  - type: Icon
+    sprite: Mobs/Species/_Paradise/Kidan/parts.rsi
+    state: "head"
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: UncookedAnimalProteins
+        Quantity: 10
+      - ReagentId: Fat
+        Quantity: 10
+      - reagentId : Blood
+        Quantity: 20
+
+- type: entity
+  id: LeftArmKidan
+  name: "left kidan arm"
+  parent: [PartKidan, BaseLeftArm]
+  components:
+  - type: Sprite
+    sprite: Mobs/Species/_Paradise/Kidan/parts.rsi
+    state: "l_arm"
+
+- type: entity
+  id: RightArmKidan
+  name: "right kidan arm"
+  parent: [PartKidan, BaseRightArm]
+  components:
+  - type: Sprite
+    sprite: Mobs/Species/_Paradise/Kidan/parts.rsi
+    state: "r_arm"
+
+- type: entity
+  id: LeftHandKidan
+  name: "left kidan hand"
+  parent: [PartKidan, BaseLeftHand]
+  components:
+  - type: Sprite
+    sprite: Mobs/Species/_Paradise/Kidan/parts.rsi
+    state: "l_hand"
+
+- type: entity
+  id: RightHandKidan
+  name: "right kidan hand"
+  parent: [PartKidan, BaseRightHand]
+  components:
+  - type: Sprite
+    sprite: Mobs/Species/_Paradise/Kidan/parts.rsi
+    state: "r_hand"
+
+- type: entity
+  id: LeftLegKidan
+  name: "left kidan leg"
+  parent: [PartKidan, BaseLeftLeg]
+  components:
+  - type: Sprite
+    sprite: Mobs/Species/_Paradise/Kidan/parts.rsi
+    state: "l_leg"
+
+- type: entity
+  id: RightLegKidan
+  name: "right kidan leg"
+  parent: [PartKidan, BaseRightLeg]
+  components:
+  - type: Sprite
+    sprite: Mobs/Species/_Paradise/Kidan/parts.rsi
+    state: "r_leg"
+
+- type: entity
+  id: LeftFootKidan
+  name: "left kidan foot"
+  parent: [PartKidan, BaseLeftFoot]
+  components:
+  - type: Sprite
+    sprite: Mobs/Species/_Paradise/Kidan/parts.rsi
+    state: "l_foot"
+
+- type: entity
+  id: RightFootKidan
+  name: "right kidan foot"
+  parent: [PartKidan, BaseRightFoot]
+  components:
+  - type: Sprite
+    sprite: Mobs/Species/_Paradise/Kidan/parts.rsi
+    state: "r_foot"

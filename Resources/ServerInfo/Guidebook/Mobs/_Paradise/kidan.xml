@@ -2,7 +2,7 @@
   # Kidan
 
   <Box>
-    <GuideEntityEmbed Entity="MobKidan" Caption=""/>
+    <GuideEntityEmbed Entity="BaseMobKidan" Caption=""/>
   </Box>
 
   Kidan receive 20% less Slashing, Piercing, and Blunt damage.

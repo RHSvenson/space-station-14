@@ -107,6 +107,14 @@
     templateId: arachnid
 
 - type: entity
+  id: BaseInventoryKidan
+  abstract: true
+  components:
+  - type: Inventory
+    speciesId: kidan
+    templateId: kidan
+
+- type: entity
   id: BaseInventoryAvali
   abstract: true
   components:

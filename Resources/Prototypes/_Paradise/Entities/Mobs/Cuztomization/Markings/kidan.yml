@@ -2,7 +2,7 @@
 - type: marking
   id: KidanHornsBrokenBull
   bodyPart: HeadSide
-  groupWhitelist: [Kidan]
+  speciesRestriction: Kidan
   sprites:
   - sprite: Mobs/Customization/_Paradise/Kidan/horns.rsi
     state: broken_bull_horns_s
@@ -14,7 +14,7 @@
 - type: marking
   id: KidanHornsBullSmall
   bodyPart: HeadSide
-  groupWhitelist: [Kidan]
+  speciesRestriction: Kidan
   sprites:
   - sprite: Mobs/Customization/_Paradise/Kidan/horns.rsi
     state: bull_horns_s
@@ -26,7 +26,7 @@
 - type: marking
   id: KidanHornsCurled
   bodyPart: HeadSide
-  groupWhitelist: [Kidan]
+  speciesRestriction: Kidan
   sprites:
   - sprite: Mobs/Customization/_Paradise/Kidan/horns.rsi
     state: curled_horns_s
@@ -38,7 +38,7 @@
 - type: marking
   id: KidanHornsHawk
   bodyPart: HeadSide
-  groupWhitelist: [Kidan]
+  speciesRestriction: Kidan
   sprites:
   - sprite: Mobs/Customization/_Paradise/Kidan/horns.rsi
     state: hawk_horn_s
@@ -50,7 +50,7 @@
 - type: marking
   id: KidanHornsHollow
   bodyPart: HeadSide
-  groupWhitelist: [Kidan]
+  speciesRestriction: Kidan
   sprites:
   - sprite: Mobs/Customization/_Paradise/Kidan/horns.rsi
     state: hollow_horns_s
@@ -62,7 +62,7 @@
 - type: marking
   id: KidanHornsTall
   bodyPart: HeadSide
-  groupWhitelist: [Kidan]
+  speciesRestriction: Kidan
   sprites:
   - sprite: Mobs/Customization/_Paradise/Kidan/horns.rsi
     state: tall_horns_s
@@ -74,7 +74,7 @@
 - type: marking
   id: KidanHornsWide
   bodyPart: HeadSide
-  groupWhitelist: [Kidan]
+  speciesRestriction: Kidan
   sprites:
   - sprite: Mobs/Customization/_Paradise/Kidan/horns.rsi
     state: wide_horns_s
@@ -88,7 +88,7 @@
 - type: marking
   id: KidanAntennaeAlert
   bodyPart: Hair # it just works
-  groupWhitelist: [Kidan]
+  speciesRestriction: Kidan
   sprites:
     - sprite: Mobs/Customization/_Paradise/Kidan/antennae.rsi
       state: alert_s
@@ -100,7 +100,7 @@
 - type: marking
   id: KidanAntennaeCrescent
   bodyPart: Hair
-  groupWhitelist: [Kidan]
+  speciesRestriction: Kidan
   sprites:
     - sprite: Mobs/Customization/_Paradise/Kidan/antennae.rsi
       state: crescent_s
@@ -112,7 +112,7 @@
 - type: marking
   id: KidanAntennaeCurious
   bodyPart: Hair
-  groupWhitelist: [Kidan]
+  speciesRestriction: Kidan
   sprites:
     - sprite: Mobs/Customization/_Paradise/Kidan/antennae.rsi
       state: curious_s
@@ -124,7 +124,7 @@
 - type: marking
   id: KidanAntennaeLong
   bodyPart: Hair
-  groupWhitelist: [Kidan]
+  speciesRestriction: Kidan
   sprites:
     - sprite: Mobs/Customization/_Paradise/Kidan/antennae.rsi
       state: alert_s
@@ -136,7 +136,7 @@
 - type: marking
   id: KidanAntennaeMantieCurl
   bodyPart: Hair
-  groupWhitelist: [Kidan]
+  speciesRestriction: Kidan
   sprites:
     - sprite: Mobs/Customization/_Paradise/Kidan/antennae.rsi
       state: Mantie_Curled_s
@@ -148,7 +148,7 @@
 - type: marking
   id: KidanAntennaeMantieLong
   bodyPart: Hair
-  groupWhitelist: [Kidan]
+  speciesRestriction: Kidan
   sprites:
     - sprite: Mobs/Customization/_Paradise/Kidan/antennae.rsi
       state: Mantie_Long_s
@@ -160,7 +160,7 @@
 - type: marking
   id: KidanAntennaeMopey
   bodyPart: Hair
-  groupWhitelist: [Kidan]
+  speciesRestriction: Kidan
   sprites:
     - sprite: Mobs/Customization/_Paradise/Kidan/antennae.rsi
       state: mopey_s
@@ -172,7 +172,7 @@
 - type: marking
   id: KidanAntennaeMoth
   bodyPart: Hair
-  groupWhitelist: [Kidan]
+  speciesRestriction: Kidan
   sprites:
     - sprite: Mobs/Customization/_Paradise/Kidan/antennae.rsi
       state: moth_s
@@ -184,7 +184,7 @@
 - type: marking
   id: KidanAntennaeNormal
   bodyPart: Hair
-  groupWhitelist: [Kidan]
+  speciesRestriction: Kidan
   sprites:
     - sprite: Mobs/Customization/_Paradise/Kidan/antennae.rsi
       state: normal_s
@@ -196,7 +196,7 @@
 - type: marking
   id: KidanAntennaePerky
   bodyPart: Hair
-  groupWhitelist: [Kidan]
+  speciesRestriction: Kidan
   sprites:
     - sprite: Mobs/Customization/_Paradise/Kidan/antennae.rsi
       state: perky_s
@@ -208,7 +208,7 @@
 - type: marking
   id: KidanAntennaeVeryShort
   bodyPart: Hair
-  groupWhitelist: [Kidan]
+  speciesRestriction: Kidan
   sprites:
     - sprite: Mobs/Customization/_Paradise/Kidan/antennae.rsi
       state: very_short_s
@@ -222,7 +222,7 @@
 - type: marking
   id: KidanOutlineMarking
   bodyPart: Chest
-  groupWhitelist: [Kidan]
+  speciesRestriction: Kidan
   sprites:
     - sprite: Mobs/Customization/_Paradise/Kidan/kidan_body_markings.rsi
       state: outline_s

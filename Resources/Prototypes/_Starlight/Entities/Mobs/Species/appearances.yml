@@ -261,3 +261,13 @@
     layers:
       - sprite: _Starlight/Mobs/Species/Experiment/parts.rsi
         state: full
+
+- type: entity
+  parent: [BaseSpeciesDummy, BaseInventoryArachnid]
+  id: AppearanceKidan
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: HumanoidAppearance
+    species: Kidan
+    undergarmentTop: UndergarmentTopTanktopKidan
+    undergarmentBottom: UndergarmentBottomBoxersKidan

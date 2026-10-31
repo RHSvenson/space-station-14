@@ -1,0 +1,85 @@
+- type: entity
+  parent: [BaseMobSpeciesOrganic, BaseSpeciesPickupableHuge]
+  id: BaseMobKidan
+  abstract: true
+  components:
+  - type: LanguageKnowledge
+    speaks:
+    - GalacticCommon
+    understands:
+    - GalacticCommon
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      110: Critical
+      220: Dead
+  - type: Icon
+    sprite: Mobs/Species/_Paradise/Kidan/parts.rsi
+    state: full
+  - type: Respirator
+    damage:
+      types:
+        Asphyxiation: 2
+    damageRecovery:
+      types:
+        Asphyxiation: -1.0
+  - type: UnpoweredFlashlight
+    toggleAction: ActionBioLight
+  - type: PointLight
+    enabled: false
+    radius: 3 # a little over double a PDA's flashlight radius, as a treat
+  - type: Absorbable
+  - type: Hunger
+    baseDecayRate: 1.2
+  - type: Thirst
+    baseDecayRate: 1.2
+  - type: Damageable
+    damageModifierSet: Kidan
+  - type: MeleeWeapon
+    animation: WeaponArcClaw
+    soundHit:
+      collection: AlienClaw
+    damage:
+      types:
+        Slash: 5
+        Piercing: 2
+  - type: Tag
+    tags:
+    - CanPilot
+    - FootstepSound
+    - DoorBumpOpener
+    - SpiderCraft
+    - AnomalyHost
+  - type: Butcherable
+    spawned:
+    - id: FoodMeat
+      amount: 5
+  - type: Reactive
+    reactions:
+    - reagents:
+      - PestKiller
+      methods:
+      - Touch
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 0.2
+      - !type:PopupMessage
+        type: Local
+        visualType: Large
+        messages:
+        - "kidan-hurt-by-pest-spray-popup"
+        probability: 0.66
+  - type: Speech
+    speechVerb: Arachnid
+    speechSounds: Arachnid
+    allowedEmotes:
+    - 'Click'
+    - 'Chitter'
+  - type: Vocal
+    emoteSounds: UnisexArachnid
+  - type: CreamPied
+    sprite:
+      sprite: Effects/creampie.rsi
+      state: creampie_arachnid

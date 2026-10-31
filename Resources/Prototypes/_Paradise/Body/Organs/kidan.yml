@@ -1,0 +1,141 @@
+﻿- type: entity
+  id: BaseKidanOrgan
+  parent: BaseItem
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: Mobs/Species/_Paradise/Kidan/organs.rsi
+  - type: Organ
+  - type: Edible
+  - type: Extractable
+    grindableSolutionName: organ
+  - type: SolutionManager
+    solutions:
+    - SolutionOrganNutriment
+    - SolutionOrganFoodMeat
+  - type: Tag
+    tags:
+      - Meat
+
+- type: entity
+  id: OrganKidanStomach
+  parent: [OrganAnimalStomach, BaseOrganStomach, BaseKidanOrgan]
+  name: kidan stomach
+  suffix: Kidan
+  description: "Gross. This is hard to stomach."
+  components:
+  - type: Sprite
+    sprite: Mobs/Species/_Paradise/Kidan/organs.rsi
+    state: stomach
+  - type: Item
+    size: Small
+    heldPrefix: stomach
+  - type: Stomach
+  - type: SolutionManager
+    solutions:
+    - SolutionOrganFoodMeat
+    - SolutionOrganStomach50
+
+- type: entity
+  id: OrganKidanLungs
+  parent: [BaseOrganLungs, BaseKidanOrgan]
+  name: kidan lungs
+  suffix: Kidan
+  components:
+  - type: Sprite
+    layers:
+      - state: lung-l
+      - state: lung-r
+  - type: Lung
+  - type: Metabolizer
+    metabolizerTypes: [ Human ]
+    stages: [ Respiration ]
+  - type: SolutionManager
+    solutions:
+    - SolutionOrganNutriment
+    - SolutionOrganFoodMeat
+    - SolutionOrganLung
+
+- type: entity
+  id: OrganKidanHeart
+  parent: [BaseOrganHeart, BaseKidanOrgan]
+  name: kidan heart
+  suffix: Kidan
+  description: "It looks nothing like a human heart, but it pumps blood just the same."
+  components:
+  - type: Tag
+    tags:
+      - Meat
+      - Heart
+  - type: Sprite
+    state: heart-on
+  - type: Item
+    size: Small
+    heldPrefix: heart
+  - type: Metabolizer
+    maxReagents: 2
+    metabolizerTypes: [ Arachnid ]
+    stages: [ Circulation ]
+
+- type: entity
+  id: OrganKidanLiver
+  parent: [BaseOrganLiver, BaseKidanOrgan]
+  name: kidan liver
+  suffix: Kidan
+  description: "Completely different in appearance from a mammalian liver, but it performs the same function."
+  components:
+  - type: Sprite
+    state: liver
+  - type: Item
+    size: Small
+    heldPrefix: liver
+  - type: Metabolizer
+    maxReagents: 1
+    metabolizerTypes: [ Animal ]
+    stages: [ Metabolites ]
+
+- type: entity
+  id: OrganKidanKidneys
+  parent: [BaseOrganKidneys, BaseKidanOrgan]
+  name: kidan kidney
+  suffix: Kidan
+  description: "Kidan kidneys are larger, and sport three distinct chambers, although they only have the one."
+  components:
+  - type: Sprite
+    state: kidneys
+  - type: Item
+    size: Small
+    heldPrefix: kidneys
+  - type: Metabolizer
+    maxReagents: 5
+    metabolizerTypes: [ Animal ]
+
+- type: entity
+  id: OrganKidanEyes
+  parent: [BaseKidanOrgan, BaseOrganEyes]
+  name: kidan eyes
+  suffix: Kidan
+  description: "Kidan eyes are large and multi-faceted."
+  components:
+  - type: Sprite
+    layers:
+      - state: eye-l
+      - state: eye-r
+  - type: Item
+    size: Small
+    heldPrefix: eyes
+  - type: OrganVisualization
+    layer: Eyes
+
+- type: entity
+  id: OrganKidanBrain
+  parent: [BaseKidanOrgan, BaseOrganBrain]
+  name: kidan brain
+  suffix: Kidan
+  description: "Smaller than most, as the Kidan nervous system is significantly less centralized. The brain houses only higher functions, with the rest of the nervous system distributed throughout the body."
+  components:
+  - type: Sprite
+    state: brain
+  - type: Item
+    size: Small
+    heldPrefix: brain
