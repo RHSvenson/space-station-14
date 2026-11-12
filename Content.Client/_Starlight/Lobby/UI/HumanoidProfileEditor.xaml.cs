@@ -140,16 +140,25 @@ namespace Content.Client._Starlight.Lobby.UI
                     SetAge(newAge);
             };
 
-            PronounsButton.AddItem(Loc.GetString("humanoid-profile-editor-pronouns-male-text"), (int) Gender.Male);
-            PronounsButton.AddItem(Loc.GetString("humanoid-profile-editor-pronouns-female-text"), (int) Gender.Female);
-            PronounsButton.AddItem(Loc.GetString("humanoid-profile-editor-pronouns-epicene-text"), (int) Gender.Epicene);
-            PronounsButton.AddItem(Loc.GetString("humanoid-profile-editor-pronouns-neuter-text"), (int) Gender.Neuter);
+            #region Gender
+            // Blimpuf
 
-            PronounsButton.OnItemSelected += args =>
+            PronounsContainer.AddChild(PronounsButton = new MultiselectOptionButton<Gender>
             {
-                PronounsButton.SelectId(args.Id);
-                SetGender((Gender) args.Id);
+                ToolTip = Loc.GetString("blimpuf-pronouns-selection-hint")
+            });
+
+            PronounsButton.AddItem(Loc.GetString("humanoid-profile-editor-pronouns-male-text"), Gender.Male);
+            PronounsButton.AddItem(Loc.GetString("humanoid-profile-editor-pronouns-female-text"), Gender.Female);
+            PronounsButton.AddItem(Loc.GetString("humanoid-profile-editor-pronouns-epicene-text"), Gender.Epicene);
+            PronounsButton.AddItem(Loc.GetString("humanoid-profile-editor-pronouns-neuter-text"), Gender.Neuter);
+
+            PronounsButton.OnItemSelected += _ =>
+            {
+                SetGender(PronounsButton.SelectedKeys[0]);
             };
+
+            #endregion Gender
 
             RefreshSpecies();
 
