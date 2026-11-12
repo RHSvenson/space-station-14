@@ -18,6 +18,8 @@ public sealed partial class HumanoidProfileEditor
     private readonly List<SpeciesPrototype> _species = new();
     private static readonly ProtoId<GuideEntryPrototype> DefaultSpeciesGuidebook = "Species";
 
+    public MultiselectOptionButton<Gender> PronounsButton { get; private set; } // Blimpuf
+
     public void RefreshSpecies()
     {
         SpeciesButton.Clear();
